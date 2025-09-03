@@ -33,3 +33,4 @@ Team 1
 - Dykunets Ivan
 - Dudnik Roman
 - Cherevychnyi Yaroslav
+- Huz Maryna
