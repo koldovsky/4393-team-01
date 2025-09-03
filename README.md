@@ -35,3 +35,4 @@ Team 1
 - Cherevychnyi Yaroslav
 - Huz Maryna
 - Kaziuta Rostyslav
+- Maria Batoorina
