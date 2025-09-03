@@ -34,3 +34,4 @@ Team 1
 - Dudnik Roman
 - Cherevychnyi Yaroslav
 - Huz Maryna
+- Kaziuta Rostyslav
