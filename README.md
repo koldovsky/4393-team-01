@@ -40,3 +40,4 @@ Team 1
 - Marko Hlovachevkyi
 - Ilya Borodiy
 - Stanislav Kustov
+- Hordiienko Vladyslava
