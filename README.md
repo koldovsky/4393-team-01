@@ -33,7 +33,7 @@ Team 1
 - Dykunets Ivan
 - Dudnik Roman - 16 rental-policies.content.partial.html
 - Cherevychnyi Yaroslav
-- Huz Maryna
+- Huz Maryna - 9 (global.footer.partial.html)
 - Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
 - Maria Batoorina
 - Andrii Khrushch
