@@ -38,3 +38,4 @@ Team 1
 - Maria Batoorina
 - Andrii Khrushch
 - Marko Hlovachevkyi
+- Stanislav Kustov
