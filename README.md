@@ -36,5 +36,5 @@ Team 1
 - Huz Maryna
 - Kaziuta Rostyslav
 - Maria Batoorina
--Andrii Khrushch
+- Andrii Khrushch
 - Marko Hlovachevkyi
