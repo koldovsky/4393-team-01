@@ -34,7 +34,7 @@ Team 1
 - Dudnik Roman
 - Cherevychnyi Yaroslav
 - Huz Maryna
-- Kaziuta Rostyslav
+- Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
 - Maria Batoorina
 - Andrii Khrushch
 - Marko Hlovachevkyi
