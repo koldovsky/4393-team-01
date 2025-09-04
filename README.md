@@ -39,3 +39,4 @@ Team 1
 - Andrii Khrushch
 - Marko Hlovachevkyi
 - Ilya Borodiy
+- Stanislav Kustov
