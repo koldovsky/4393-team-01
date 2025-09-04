@@ -37,3 +37,4 @@ Team 1
 - Kaziuta Rostyslav
 - Maria Batoorina
 -Andrii Khrushch
+- Marko Hlovachevkyi
