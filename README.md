@@ -43,5 +43,6 @@ Team 1
 - Stanislav Kustov
 - Hordiienko Vladyslava
 - Iryna Abrosimova - 13  (gallery.roulette-gallery.partial.html)
-
+- Herei Vladyslav - 5
+- 
 
