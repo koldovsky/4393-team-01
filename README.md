@@ -36,7 +36,7 @@ Team 1
 - Huz Maryna - 9 (global.footer.partial.html)
 - Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
 - Maria Batoorina
-- Andrii Khrushch
+- Andrii Khrushch -2(index.adventure-hero.partial.html)
 - Marko Hlovachevkyi
 - Ilya Borodiy
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
