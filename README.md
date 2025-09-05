@@ -42,5 +42,6 @@ Team 1
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
 - Stanislav Kustov
 - Hordiienko Vladyslava
+- Iryna Abrosimova - 13  (gallery.roulette-gallery.partial.html)
 
 
