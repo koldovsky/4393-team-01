@@ -32,7 +32,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 Team 1
 - Dykunets Ivan
 - Dudnik Roman - 16 rental-policies.content.partial.html
-- Cherevychnyi Yaroslav
+- Cherevychnyi Yaroslav 6 index.shop-cafe.partial.html
 - Huz Maryna - 9 (global.footer.partial.html)
 - Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
 - Maria Batoorina
