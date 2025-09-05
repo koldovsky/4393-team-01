@@ -41,3 +41,4 @@ Team 1
 - Ilya Borodiy
 - Stanislav Kustov
 - Hordiienko Vladyslava
+- Mariia Shuryha
