@@ -39,7 +39,7 @@ Team 1
 - Andrii Khrushch
 - Marko Hlovachevkyi
 - Ilya Borodiy
-- Mariia Shuryha 15 (accommodation.choose-the-best.partial.html)
+- Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
 - Stanislav Kustov
 - Hordiienko Vladyslava
 
