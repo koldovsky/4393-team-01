@@ -1,0 +1,31 @@
+@layer base {
+  :root {
+    /* Кольори */
+    --color-bg: #0d0f12;
+    --color-surface: #151a21;
+    --color-text: #eef2f6;
+    --color-muted: #a8b0bb;
+    --color-accent: #60a5fa; /* синій акцент */
+    --color-accent-2: #22c55e; /* зелений для CTA/успіху */
+
+    /* Шрифти та розміри */
+    --ff-sans: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    --ff-serif: ui-serif, Georgia, serif;
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.25rem;
+    --fs-700: 1.5rem;
+    --fs-800: 2rem;
+    --fs-900: 2.5rem;
+
+    /* Контейнер/сітка */
+    --content-max: 1200px;
+    --gutter: 16px;
+
+    /* Інше */
+    --radius: 12px;
+    --shadow: 0 10px 30px rgba(0,0,0,.25);
+    --transition: 180ms ease;
+  }
+}

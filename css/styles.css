@@ -1,0 +1,38 @@
+/* Визначаємо порядок шарів */
+@layer base, layout, components, utilities, pages;
+
+/* Base */
+@import url("./base/reset.css") layer(base);
+@import url("./base/variables.css") layer(base);
+@import url("./base/fonts.css") layer(base);
+@import url("./base/typography.css") layer(base);
+
+/* Layout */
+@import url("./layout/container.css") layer(layout);
+@import url("./layout/grid.css") layer(layout);
+@import url("./layout/header.css") layer(layout);
+@import url("./layout/footer.css") layer(layout);
+@import url("./layout/sections.css") layer(layout);
+
+/* Components */
+@import url("./components/navigation.css") layer(components);
+@import url("./components/buttons.css") layer(components);
+@import url("./components/cards.css") layer(components);
+@import url("./components/gallery.css") layer(components);
+@import url("./components/forms.css") layer(components);
+@import url("./components/hero.css") layer(components);
+@import url("./components/testimonials.css") layer(components);
+@import url("./components/shop-cafe.css") layer(components);
+
+/* Utilities */
+@import url("./utilities/spacing.css") layer(utilities);
+@import url("./utilities/helpers.css") layer(utilities);
+@import url("./utilities/visually-hidden.css") layer(utilities);
+
+/* Pages (лише сторінкові нюанси) */
+@import url("./pages/index.css") layer(pages);
+@import url("./pages/about.css") layer(pages);
+@import url("./pages/gallery.css") layer(pages);
+@import url("./pages/accommodation.css") layer(pages);
+@import url("./pages/rental-policies.css") layer(pages);
+@import url("./pages/how-to-get-there.css") layer(pages);

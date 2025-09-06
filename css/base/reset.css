@@ -1,0 +1,10 @@
+@layer base {
+  /* Modern CSS reset (скорочений) */
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; }
+  html:focus-within { scroll-behavior: smooth; }
+  body { min-height: 100dvh; text-rendering: optimizeLegibility; }
+  img, picture, svg, video { display: block; max-width: 100%; }
+  input, button, textarea, select { font: inherit; }
+  :root { color-scheme: light dark; }
+}

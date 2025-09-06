@@ -1,0 +1,6 @@
+@layer utilities {
+  .text-muted { color: var(--color-muted) !important; }
+  .center { display: grid; place-items: center; }
+  .shadow { box-shadow: var(--shadow); }
+  .radius { border-radius: var(--radius); }
+}

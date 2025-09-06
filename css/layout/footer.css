@@ -1,0 +1,6 @@
+@layer layout {
+  .footer { background: var(--color-surface); padding: 40px 0; margin-top: 40px; }
+  /*.footer__top, .footer__bottom { class: container; }  підказка — у розмітці додай .container */
+  .footer__menu, .footer__socials { display: flex; gap: 16px; list-style: none; padding: 0; }
+  .footer__copy { color: var(--color-muted); }
+}

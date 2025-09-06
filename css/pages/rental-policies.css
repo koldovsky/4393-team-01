@@ -1,0 +1,4 @@
+@layer pages {
+  .policies__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .policy { background: var(--color-surface); padding: 16px; border-radius: var(--radius); }
+}

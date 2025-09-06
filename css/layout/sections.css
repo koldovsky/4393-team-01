@@ -1,0 +1,6 @@
+@layer layout {
+  section { padding-block: clamp(32px, 6vw, 72px); }
+  .section--tight { padding-block: 24px; }
+  .section__title { margin-bottom: 16px; }
+  .section__lead { color: var(--color-muted); margin-bottom: 24px; }
+}
