@@ -37,7 +37,7 @@ Team 1
 - Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
 - Maria Batoorina
 - Andrii Khrushch -2(index.adventure-hero.partial.html)
-- Marko Hlovachevkyi
+- Marko Hlovachevkyi - 3 (index.cabin-rentals.partial.html)
 - Ilya Borodiy
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
 - Stanislav Kustov
