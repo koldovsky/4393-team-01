@@ -41,7 +41,7 @@ Team 1
 - Ilya Borodiy
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
 - Stanislav Kustov
-- Hordiienko Vladyslava
+- Hordiienko Vladyslava - 8 (index.make-a-reservation.partial.html)
 - Iryna Abrosimova - 13  (gallery.roulette-gallery.partial.html)
 - Herei Vladyslav - 5
 - Kazantsev Ivan - 10 (about.about-yosemite.partial.html)
