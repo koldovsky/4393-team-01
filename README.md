@@ -44,5 +44,5 @@ Team 1
 - Hordiienko Vladyslava
 - Iryna Abrosimova - 13  (gallery.roulette-gallery.partial.html)
 - Herei Vladyslav - 5
-- 
+- Kazantsev Ivan - 10 (about.about-yosemite.partial.html)
 
