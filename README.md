@@ -38,7 +38,7 @@ Team 1
 - Maria Batoorina
 - Andrii Khrushch -2(index.adventure-hero.partial.html)
 - Marko Hlovachevkyi - 3 (index.cabin-rentals.partial.html)
-- Ilya Borodiy
+- Ilya Borodiy - 7 (index.testimonials.partial.html)
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
 - Stanislav Kustov
 - Hordiienko Vladyslava - 8 (index.make-a-reservation.partial.html)
