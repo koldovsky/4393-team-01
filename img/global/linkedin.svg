@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="32"
+    height="32"
+    role="img"
+    aria-labelledby="title-linkedin">
+    <title id="title-linkedin">LinkedIn icon</title>
+
+    <circle cx="16" cy="16" r="16" fill="#5e9a81" />
+
+    <path fill="#ffffff"
+        d="M9.97,11.6c1.09,0,1.94-0.81,1.94-1.8c0-0.99-0.85-1.8-1.94-1.8c-1.09,0-1.97,0.81-1.97,1.8
+    C8,10.79,8.88,11.6,9.97,11.6z M8.45,23.17h3.54V12.97h-3.54V23.17z M16.95,17.5c0-1.17,0.56-2.31,1.88-2.31
+    c1.32,0,1.66,1.14,1.66,2.28v5.57h3.52v-5.8c0-4.03-2.38-4.73-3.85-4.73c-1.46,0-2.25,0.49-3.18,1.69v-1.36h-3.53v10.2h3.53V17.5z" />
+</svg>
