@@ -1,8 +1,8 @@
 @layer base {
   :root {
     /* Кольори */
-    --color-bg: #0d0f12;
-    --color-surface: #151a21;
+    --color-bg: #ffffff;
+    --color-surface: #bec1c5;
     --color-text: #282520;
     --color-muted: #282520;
     --color-accent: #60a5fa; /* синій акцент */
