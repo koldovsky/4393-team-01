@@ -45,7 +45,7 @@ Team 1
 - Marko Hlovachevkyi - 3 (index.cabin-rentals.partial.html)
 - Ilya Borodiy - 7 (index.testimonials.partial.html)
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
-- Stanislav Kustov
+- Stanislav Kustov - 18 (how-to-get-there.html, how-to-get-there.map-contact.partial.html)
 - Hordiienko Vladyslava - 8 (index.make-a-reservation.partial.html)
 - Iryna Abrosimova - 13 (gallery.roulette-gallery.partial.html)
 - Herei Vladyslav - 5
