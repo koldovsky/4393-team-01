@@ -40,7 +40,7 @@ Team 1
 - Cherevychnyi Yaroslav 6 index.shop-cafe.partial.html
 - Huz Maryna - 9 (global.footer.partial.html)
 - Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
-- Maria Batoorina
+- Maria Batoorina - 11 (about.season-activities.partial.html)
 - Andrii Khrushch -2(index.adventure-hero.partial.html)
 - Marko Hlovachevkyi - 3 (index.cabin-rentals.partial.html)
 - Ilya Borodiy - 7 (index.testimonials.partial.html)
