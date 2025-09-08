@@ -48,7 +48,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 11. Maria Batoorina – (about.season-activities.partial.html)  
 12. Dykunets Ivan – (gallery.roulette-gallery.partial.html)  
 13. Iryna Abrosimova – (gallery.roulette-gallery.partial.html)  
-14. Oleksandr Bartoshko – (accommodation.cabin-rentals.partial.html) NOT ADDED  
+14. Oleksandr Bartoshko – (accommodation.cabin-rentals.partial.html) 
 15. Mariia Shuryha – (accommodation.choose-the-best.partial.html)  
 16. Dudnik Roman – (rental-policies.content.partial.html)  
 17. Dmytro Honcharenko – (how-to-get-there.guide.partial.html)  
