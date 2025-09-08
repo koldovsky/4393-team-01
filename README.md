@@ -46,6 +46,7 @@ Team 1
 - Ilya Borodiy - 7 (index.testimonials.partial.html)
 - Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
 - Stanislav Kustov - 18 (how-to-get-there.html, how-to-get-there.map-contact.partial.html)
+- Dmytro Honcharenko - 17 (how-to-get-there.guide.partial.html)
 - Hordiienko Vladyslava - 8 (index.make-a-reservation.partial.html)
 - Iryna Abrosimova - 13 (gallery.roulette-gallery.partial.html)
 - Herei Vladyslav - 5
