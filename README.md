@@ -35,20 +35,22 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 Team 1
 
-- Dykunets Ivan - 12 gallery.roulette-gallery.partial.html
-- Dudnik Roman - 16 rental-policies.content.partial.html
-- Cherevychnyi Yaroslav 6 index.shop-cafe.partial.html
-- Huz Maryna - 9 (global.footer.partial.html)
-- Kaziuta Rostyslav - 4(index.things-to-do.partial.html)
-- Maria Batoorina - 11 (about.season-activities.partial.html)
-- Andrii Khrushch -2(index.adventure-hero.partial.html)
-- Marko Hlovachevkyi - 3 (index.cabin-rentals.partial.html)
-- Ilya Borodiy - 7 (index.testimonials.partial.html)
-- Mariia Shuryha - 15 (accommodation.choose-the-best.partial.html)
-- Stanislav Kustov - 18 (how-to-get-there.html, how-to-get-there.map-contact.partial.html)
-- Dmytro Honcharenko - 17 (how-to-get-there.guide.partial.html)
-- Hordiienko Vladyslava - 8 (index.make-a-reservation.partial.html)
-- Iryna Abrosimova - 13 (gallery.roulette-gallery.partial.html)
-- Herei Vladyslav - 5
-- Kazantsev Ivan - 10 (about.about-yosemite.partial.html)
-- Vitalii Levinton - 1 (global.header-nav.partial.html, index.hero.partial.html)
+1.Vitalii Levinton – (global.header-nav.partial.html, index.hero.partial.html)
+2.Andrii Khrushch – (index.adventure-hero.partial.html)
+3.Marko Hlovachevkyi – (index.cabin-rentals.partial.html)
+4.Kaziuta Rostyslav – (index.things-to-do.partial.html)
+5.Herei Vladyslav – (index.our-facilities.partial.html)
+6.Cherevychnyi Yaroslav – (index.shop-cafe.partial.html)
+7.Ilya Borodiy – (index.testimonials.partial.html)
+8.Hordiienko Vladyslava – (index.make-a-reservation.partial.html)
+9.Huz Maryna – (global.footer.partial.html)
+10.Kazantsev Ivan – (about.about-yosemite.partial.html)
+11.Maria Batoorina – (about.season-activities.partial.html)
+12.Dykunets Ivan – (gallery.roulette-gallery.partial.html)
+13.Iryna Abrosimova – (gallery.roulette-gallery.partial.html)
+14.Abrosimova Iryna - (accommodation.cabin-rentals.partial.html) NOT ADDED
+15.Mariia Shuryha – (accommodation.choose-the-best.partial.html)
+16.Dudnik Roman – (rental-policies.content.partial.html)
+17.Dmytro Honcharenko – (how-to-get-there.guide.partial.html)
+18.Stanislav Kustov – (how-to-get-there.html, how-to-get-there.map-contact.partial.html)
+10-2.Yaroslav Milevskyi - (about.about-yosemite-gallery.partial.html) NOT ADDED
