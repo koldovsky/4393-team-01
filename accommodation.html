@@ -20,16 +20,24 @@
         data-hx-get="global.header-nav.partial.html"
       ></nav>
     </header>
-    <section
+    <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="accommodation.cabin-rentals.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="accommodation.choose-the-best.partial.html"
+      ></section>
+    </main>
+    <footer
+      class="footer"
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="accommodation.cabin-rentals.partial.html"
-    ></section>
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="accommodation.choose-the-best.partial.html"
-    ></section>
+      data-hx-get="global.footer.partial.html"
+    ></footer>
   </body>
 </html>
 <!-- Mariia Shuryha -->
