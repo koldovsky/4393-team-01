@@ -1,9 +1,0 @@
-@layer layout {
-  .header { position: relative; z-index: 50; background: transparent; }
-  .header__nav { padding: 10px var(--gutter); }
-  .header__menu { display: flex; align-items: center; gap: 20px; list-style: none; }
-  .header__menu-link { padding: 8px 12px; border-radius: 8px; transition: background var(--transition); }
-  .header__menu-link:hover { background: color-mix(in srgb, var(--color-accent) 15%, transparent); }
-  .header__logo { display: block; width: 102px; height: auto; }
-  .header__contacts { display: flex; gap: 16px; color: var(--color-muted); }
-}

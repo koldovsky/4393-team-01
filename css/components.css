@@ -1,0 +1,37 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+
+/* Cards */
+.card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+}
+.card__image { width: 100%; height: 200px; object-fit: cover; }
+.card__content { padding: 16px; }
+
+/* Policy icons */
+.policy__icon {
+  width: 56px; height: 56px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+.policy__icon img {
+  width: 28px; height: 28px;
+  filter: invert(47%) sepia(90%) saturate(2500%) hue-rotate(10deg) brightness(98%) contrast(97%);
+}
