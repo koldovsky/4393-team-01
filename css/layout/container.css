@@ -1,6 +1,0 @@
-@layer layout {
-  .container {
-    width: min(100% - 2 * var(--gutter), var(--content-max));
-    margin-inline: auto;
-  }
-}

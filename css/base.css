@@ -1,0 +1,31 @@
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100dvh; background: var(--color-bg); color: var(--color-text); font-family: ui-sans-serif, system-ui; }
+
+img, svg, video { display: block; max-width: 100%; }
+
+/* Variables */
+:root {
+  --content-max: 1200px;
+  --gutter: 16px;
+
+  --color-bg: #ffffff;
+  --color-surface: #d3d9e0;
+  --color-text: #000000;
+  --color-muted: #2a2c30;
+  --color-accent: #f97316; /* помаранчевий */
+  --color-accent-2: #22c55e; /* зелений */
+
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Typography */
+h1 { font-size: 1.5rem; line-height: 1.2; }
+h2 { font-size: 1.25rem; line-height: 1.3; }
+h3 { font-size: 1.125rem; }
+p { line-height: 1.6; }
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
