@@ -10,3 +10,13 @@
 @import url("./pages/how-to-get-there.css");
 
 @import url("./utilities.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/circular-std-medium-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
