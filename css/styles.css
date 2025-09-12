@@ -22,3 +22,12 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+    font-family: 'Circular Std';
+    src: local('Circular Std Bold'), local('Circular-Std-Bold'),
+        url('CircularStd-Bold.woff2') format('woff2'),
+        url('CircularStd-Bold.woff') format('woff'),
+        url('CircularStd-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
