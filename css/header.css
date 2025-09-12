@@ -1,0 +1,63 @@
+.header {
+  background-color: var(--color-bg);
+}
+
+.header__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.header__location {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+.header__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__brand-mark {
+  display: block;
+  height: auto;
+  width: 181px;
+}
+
+.header__contacts {
+  font-style: normal;
+}
+
+.header__phones {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu {
+  justify-content: center;
+  gap: 40px;
+  margin-top: 12px;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-text, #222);
+}
+
+.header__menu-link:hover,
+.header__menu-link:focus {
+  text-decoration: underline;
+}
