@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rental policies</title>
     <script src="https://unpkg.com/htmx.org@1.9.10" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages/rental-policies.css" />
 </head>
 
 <body class="page">
     <header class="header">
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/global/global.header-nav.partial.html"></nav>
     </header>
 
     <main class="main">
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="rental-policies.content.partial.html">
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/rental-policies/rental-policies.content.partial.html">
         </section>
     </main>
 
-    <footer class="footer" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html">
+    <footer class="footer" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/global/global.footer.partial.html">
     </footer>
 </body>
 

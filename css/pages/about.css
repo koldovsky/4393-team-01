@@ -8,6 +8,6 @@
 @import url("../partials/global.header-nav.css");
 @import url("../partials/global.footer.css");
 
-/* Rental policies partial */
-@import url("../partials/rental-policies.content.css");
-
+/* About partials */
+@import url("../partials/about.about-yosemite.css");
+@import url("../partials/about.season-activities.css");

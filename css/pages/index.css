@@ -1,139 +1,18 @@
-/*Andrew Khrushch start*/
-.adventure {
-  @media only screen and (min-width: 768px) {
-  .adventure__list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  }
-  width: 320px;
-  box-sizing: border-box;
-  .adventure__title {
-    text-align: center;
-    width: 100%;
-    font-size: 34px;
-    font-family: "Circular Std", sans-serif;
-    color: var(--color-darkgr);
-    margin-bottom: 15px;
-  }
-  .adventure__description {
-    color: var(--color-lightgr);
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    margin-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+/* Загальні стилі */
+@import url("../base.css");
+@import url("../layout.css");
+@import url("../utilities.css");
+@import url("../components.css");
 
-  .adventure__list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    row-gap: 20px;
-  }
+/* Глобальні partials */
+@import url("../partials/global.header-nav.css");
+@import url("../partials/global.footer.css");
 
-  .adventure__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .adventure__image {
-    width: 149px;
-    height: 96px;
-    border-radius: 8px;
-  }
-
-  .adventure__name {
-    text-align: center;
-    font-family: "Circular Std", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    width: 85%;
-  }
-}
-/*Andrew Khrushch end*/
-
-/*Rostyslav Kaziuta start*/
-.things-to-do {
-  background: url("../../img/index.things-to-do/things-to-do-bg.jpg")
-    center/cover no-repeat;
-  position: relative;
-  padding: 80px 0;
-
-  .things-to-do__container {
-    padding: 0 24px;
-
-    .things-to-do__title {
-      font-size: 2.125rem;
-      text-align: center;
-      font-family: "Circular Std", serif;
-      color: #282520;
-      padding: 0 15px;
-      margin-bottom: 40px;
-    }
-
-    .things-to-do__list {
-      display: grid;
-      gap: 24px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      @media (min-width: 480px) {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @media (min-width: 990px) {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .things-to-do__item {
-        display: flex;
-        padding: 0 15px;
-
-        .things-to-do__card {
-          background-color: var(--color-bg);
-          border: 1px solid #ffffff;
-          border-radius: 12px;
-          text-align: center;
-          overflow: hidden;
-          padding: 15px;
-
-          .things-to-do__image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-            display: block;
-            margin-bottom: 20px;
-          }
-
-          .things-to-do__subtitle {
-            font-size: 1.375rem;
-            font-family: "Circular Std", serif;
-            color: #282520;
-            margin-bottom: 8px;
-          }
-
-          .things-to-do__price {
-            font-size: 1.25rem;
-            font-family: "Circular Std", serif;
-            color: #f98250;
-            margin-bottom: 20px;
-          }
-
-          .things-to-do__description {
-            font-size: 1rem;
-            font-family: "Roboto", serif;
-            color: #848484;
-          }
-        }
-      }
-    }
-  }
-}
-/*Rostyslav Kaziuta end*/
+/* Index partials */
+@import url("../partials/index.adventure-hero.css");
+@import url("../partials/index.cabin-rentals.css");
+@import url("../partials/index.things-to-do.css");
+@import url("../partials/index.our-facilities.css");
+@import url("../partials/index.shop-cafe.css");
+@import url("../partials/index.testimonials.css");
+@import url("../partials/index.make-a-reservation.css");

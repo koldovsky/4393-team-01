@@ -8,6 +8,6 @@
 @import url("../partials/global.header-nav.css");
 @import url("../partials/global.footer.css");
 
-/* Rental policies partial */
-@import url("../partials/rental-policies.content.css");
-
+/* Gallery partial */
+@import url("../partials/gallery.roulette-gallery.css");
+@import url("../partials/gallery.roulette-guests.css");

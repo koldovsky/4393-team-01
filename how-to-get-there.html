@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to get there</title>
     <script src="https://unpkg.com/htmx.org@1.9.10" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages/how-to-get-there.css" />
 </head>
 
 <body class="page">
@@ -14,7 +14,7 @@
         <nav 
             data-hx-trigger="load" 
             data-hx-swap="outerHTML" 
-            data-hx-get="global.header-nav.partial.html"
+            data-hx-get="partials/global/global.header-nav.partial.html"
         ></nav>
     </header>
 
@@ -23,7 +23,7 @@
         <section
             data-hx-trigger="load"
             data-hx-swap="outerHTML"
-            data-hx-get="how-to-get-there.guide.partial.html"
+            data-hx-get="partials/how-to-get-there/how-to-get-there.guide.partial.html"
         ></section>
         <!--Dmytro Honcharenko part 17 end-->
 
@@ -31,13 +31,13 @@
         <section 
             data-hx-trigger="load" 
             data-hx-swap="outerHTML" 
-            data-hx-get="how-to-get-there.map.partial.html"
+            data-hx-get="partials/how-to-get-there/how-to-get-there.map.partial.html"
         ></section>
 
         <section 
             data-hx-trigger="load" 
             data-hx-swap="outerHTML" 
-            data-hx-get="how-to-get-there.contact.partial.html"
+            data-hx-get="partials/how-to-get-there/how-to-get-there.contact.partial.html"
         ></section>
         <!--Stanislav Kustov part 18 end-->
     </main>
@@ -45,7 +45,7 @@
     <footer class="footer" 
         data-hx-trigger="load" 
         data-hx-swap="outerHTML" 
-        data-hx-get="global.footer.partial.html"
+        data-hx-get="partials/global/global.footer.partial.html"
     ></footer>
 </body>
 

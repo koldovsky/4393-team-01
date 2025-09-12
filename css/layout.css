@@ -1,3 +1,6 @@
+/* =========================
+   Container
+   ========================= */
 .container {
   width: 100%;
   max-width: var(--content-max);
@@ -5,30 +8,51 @@
   padding-inline: var(--gutter);
 }
 
+/* =========================
+   Section defaults
+   ========================= */
 section {
   padding-block: 32px;
 }
 
-/* Grid system - mobile first */
+.section__title {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.section__lead {
+  color: var(--color-muted);
+  margin-bottom: 20px;
+  max-width: 60ch;
+}
+
+/* =========================
+   Grid helpers (mobile first)
+   ========================= */
 .grid {
   display: grid;
   gap: 16px;
 }
-.grid--2 { grid-template-columns: 1fr; }
-.grid--3 { grid-template-columns: 1fr; }
 
-/* Desktop breakpoints */
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet breakpoint */
 @media (min-width: 600px) {
-  .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+/* Desktop breakpoint */
 @media (min-width: 900px) {
-  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-/* Header / Footer */
-.header { padding: 16px var(--gutter); background: var(--color-surface); }
-.header__menu { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 0; }
-
-.footer { background: var(--color-surface); padding: 24px 0; margin-top: 32px; }
-.footer__menu, .footer__socials { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 0; }
-.footer__copy { color: var(--color-muted); margin-top: 8px; }

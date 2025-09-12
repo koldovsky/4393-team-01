@@ -1,0 +1,58 @@
+/* Візуально прихований текст (для доступності): */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+/* Spacing helpers (щоб швидко налаштувати відступи):  */
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.pb-24 {
+  padding-bottom: 24px !important;
+}
+/* Текстові утиліти  */
+.flex {
+  display: flex !important;
+}
+.flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.grid-center {
+  display: grid !important;
+  place-items: center;
+}
+/* Флексові / грід-утиліти (для швидкого вирівнювання без додаткових блоків): */
+.flex {
+  display: flex !important;
+}
+.flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.grid-center {
+  display: grid !important;
+  place-items: center;
+}
+/* Швидкі стилі для тіней і радіусів */
+.shadow {
+  box-shadow: var(--shadow);
+}
+.rounded {
+  border-radius: var(--radius);
+}

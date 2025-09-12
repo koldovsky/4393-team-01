@@ -8,6 +8,6 @@
 @import url("../partials/global.header-nav.css");
 @import url("../partials/global.footer.css");
 
-/* Rental policies partial */
-@import url("../partials/rental-policies.content.css");
-
+/* How-to-get-there partials */
+@import url("../partials/how-to-get-there.guide.css");
+@import url("../partials/how-to-get-there.map-contact.css");

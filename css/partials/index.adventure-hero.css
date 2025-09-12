@@ -1,0 +1,58 @@
+/*Andrew Khrushch start*/
+.adventure {
+  @media only screen and (min-width: 768px) {
+  .adventure__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  }
+  width: 320px;
+  box-sizing: border-box;
+  .adventure__title {
+    text-align: center;
+    width: 100%;
+    font-size: 34px;
+    font-family: "Circular Std", sans-serif;
+    color: var(--color-darkgr);
+    margin-bottom: 15px;
+  }
+  .adventure__description {
+    color: var(--color-lightgr);
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .adventure__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    row-gap: 20px;
+  }
+
+  .adventure__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adventure__image {
+    width: 149px;
+    height: 96px;
+    border-radius: 8px;
+  }
+
+  .adventure__name {
+    text-align: center;
+    font-family: "Circular Std", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 85%;
+  }
+}
+/*Andrew Khrushch end*/

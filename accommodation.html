@@ -10,33 +10,33 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages/accommodation.css" />
   </head>
   <body>
     <header class="header">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
+        data-hx-get="partials/global/global.header-nav.partial.html"
       ></nav>
     </header>
     <main class="main">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="accommodation.cabin-rentals.partial.html"
+        data-hx-get="partials/accommodation/accommodation.cabin-rentals.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="accommodation.choose-the-best.partial.html"
+        data-hx-get="partials/accommodation/accommodation.choose-the-best.partial.html"
       ></section>
     </main>
     <footer
       class="footer"
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="global.footer.partial.html"
+      data-hx-get="partials/global/global.footer.partial.html"
     ></footer>
   </body>
 </html>

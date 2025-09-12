@@ -1,0 +1,93 @@
+/* =========================
+   Global Footer
+   ========================= */
+
+.footer {
+  background: var(--color-surface);
+  padding-block: 32px;
+  color: var(--color-text);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Brand / Logo */
+.footer__brand {
+  display: flex;
+  justify-content: center;
+}
+.footer__logo {
+  display: block;
+  height: auto;
+  max-width: 120px;
+}
+
+/* Navigation */
+.footer__nav {
+  text-align: center;
+}
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__menu-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+.footer__menu-link:hover,
+.footer__menu-link:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Socials */
+.footer__social {
+  text-align: center;
+}
+.footer__social-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 6px;
+}
+.footer__social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+@media (min-width: 900px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer__brand,
+  .footer__nav,
+  .footer__social {
+    flex: 1;
+  }
+  .footer__nav {
+    text-align: left;
+  }
+  .footer__social {
+    text-align: right;
+  }
+}
