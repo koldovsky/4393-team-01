@@ -1,79 +1,123 @@
 /*Andrew Khrushch start*/
- @media only screen and (min-width: 768px) {
-  .adventure__list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .adventure{
-    width: 100%;
-  }
-  .adventure__title{
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
-  .adventure__description{
-    padding-left: 45px;
-    padding-right: 45px;
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  .adventure__image{
-    width:290px;
-height: 187px;
-  }
-  .adventure__name{
-    font-size: 20px;
-    width: 100%;
-  }
-}
+/* Adventure section */
 .adventure {
-  width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px; 
   box-sizing: border-box;
-  .adventure__title {
-    text-align: center;
-    width: 100%;
-    font-size: 34px;
-    font-family: "Circular Std", sans-serif;
-    color: var(--color-darkgr);
-    margin-bottom: 15px;
+}
+
+.adventure__title {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Circular Std", sans-serif;
+  color: var(--color-darkgr);
+  margin-bottom: 16px;
+}
+
+.adventure__description {
+  max-width: 100%;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: var(--color-lightgr);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+.adventure__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.adventure__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.adventure__image {
+  width: 100%;
+  height: 140px; 
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.adventure__name {
+  font-family: "Circular Std", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+@media (min-width: 768px) {
+  .adventure {
+    padding: 30px 15px;
   }
+
+  .adventure__title {
+    font-size: 32px;
+  }
+
   .adventure__description {
-    color: var(--color-lightgr);
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    margin-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 20px;
+    max-width: 600px;
   }
 
   .adventure__list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    row-gap: 20px;
-  }
-
-  .adventure__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
   }
 
   .adventure__image {
-    width: 149px;
-    height: 96px;
-    border-radius: 8px;
+    height: 180px;
   }
 
   .adventure__name {
-    text-align: center;
-    font-family: "Circular Std", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    width: 85%;
+    font-size: 16px;
   }
 }
+
+/* десктоп */
+@media (min-width: 1200px) {
+  .adventure {
+    max-width: 1400px; 
+    padding: 40px 20px;
+  }
+
+  .adventure__title {
+    font-size: 42px;
+  }
+
+  .adventure__description {
+    font-size: 25px;
+    max-width: 900px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .adventure__list {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .adventure__image {
+    max-width: 360px;
+    height: 220px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  .adventure__name {
+    font-size: 18px;
+  }
+}
+
 /*Andrew Khrushch end*/
