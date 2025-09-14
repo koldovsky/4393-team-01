@@ -16,3 +16,14 @@
     color: var(--color-text);
     margin-bottom: 1.5rem;
 }
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery__image:hover {
+  transform: scale(1.05);
+}
