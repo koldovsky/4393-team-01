@@ -18,7 +18,7 @@
 }
 
 .gallery__image {
-  width: 100%;
+  width: 400px;
   height: 400px;
   display: block;
   transition: transform 0.4s ease;
