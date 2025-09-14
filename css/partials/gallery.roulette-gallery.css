@@ -1,0 +1,6 @@
+.gallery__title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
