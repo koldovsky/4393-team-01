@@ -19,7 +19,7 @@
 
 .gallery__image {
   width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
   transition: transform 0.4s ease;
 }
