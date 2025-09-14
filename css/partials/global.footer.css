@@ -3,7 +3,7 @@
    ========================= */
 
 .footer {
-  background: var(--color-surface);
+  background: var(--color-bg);
   padding-block: 32px;
   color: var(--color-text);
 }
