@@ -2,7 +2,8 @@
 
 .footer {
   background: var(--color-bg);
-  padding-block: 32px;
+  padding-top: 80px;
+  padding-inline: 15px;
   color: var(--color-text);
 }
 
