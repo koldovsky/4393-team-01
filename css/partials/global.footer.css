@@ -84,9 +84,9 @@
   display: block;
   width: 30px;
   height: 30px;
-  column-gap: 10;
   object-fit: contain;
 }
+
 /* Desktop & Larger Screens */
 @media (min-width: 900px) {
   .footer__container {
@@ -98,7 +98,6 @@
   }
 
   .footer__brand {
-    display: flex;
     justify-content: flex-start;
   }
 
