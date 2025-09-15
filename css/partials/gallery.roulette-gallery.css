@@ -16,6 +16,10 @@
     text-transform: uppercase;
   }
 
+  .gallery__filetr-list{
+    display: flex;
+  }
+
   .gallery__images {
     flex: 1 1 auto;
     max-width: 320px;
