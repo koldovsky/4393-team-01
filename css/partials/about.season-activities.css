@@ -1,0 +1,107 @@
+.season-activities {
+  padding: 40px 20px;
+}
+
+.season-activities__container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 80px; 
+  
+}
+
+.season-activities__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 36px;
+  letter-spacing: -0.5px;
+  color: #222;
+  padding: 0 20px;
+}
+
+.season-activities__winter,
+.season-activities__summer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.season-activities__winter-section, .season-activities__spa-section {
+  background-color: #e5e7eb;
+  padding: 40px 20px;
+}
+
+.season-activities__subtitle {
+  margin-top: 20px;  
+  margin-bottom: 16px; 
+  font-size: 1.5rem;   
+  font-weight: bold;   
+}
+
+.season-activities__content {
+  flex: 1;
+}
+
+.season-activities__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.season-activities__text {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.season-activities__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.season-activities__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.activities__icon {
+  margin-right: 8px;
+}
+
+.season-activities__winter-image,
+.season-activities__summer-image,
+.season-activities__spa-image {
+  flex: 1;
+  position: relative;
+}
+
+.season-activities__image {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 678px) {
+  .season-activities__winter,
+  .season-activities__summer,
+  .season-activities__spa {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .season-activities__image {
+    max-width: 100%;
+  }
+
+  .season-activities__content {
+    margin-top: 16px;
+  }
+
+  .season-activities__item {
+    justify-content: center;
+  }
+} 
