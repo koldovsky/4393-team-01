@@ -5,7 +5,7 @@ body {
 }
 
 .accommodation-cabin-rentals {
-  padding: 48px 0; /* Лише вертикальні відступи */
+  padding: 48px 0 0 0; 
 }
 
 .accommodation-cabin-rentals__title {
