@@ -58,11 +58,19 @@
   font-weight: 600;
   margin-bottom: 8px;
 }
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .footer__social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-inline: 4px;
 }
 .footer__social-icon {
   display: block;
