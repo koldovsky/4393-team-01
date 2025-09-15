@@ -19,7 +19,7 @@
 /* Brand / Logo */
 .footer__brand {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .footer__logo {
   display: block;
@@ -33,6 +33,7 @@
 }
 .footer__menu {
   list-style: none;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -53,19 +54,29 @@
   text-align: center;
 }
 .footer__social-title {
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 8px;
+}
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .footer__social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-inline: 6px;
 }
 .footer__social-icon {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
+  column-gap: 10;
   object-fit: contain;
 }
 @media (min-width: 900px) {
