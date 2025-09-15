@@ -9,10 +9,10 @@
     padding: 0 24px;
 
     .things-to-do__title {
-      font-size: 2.125rem;
+      font-size: 34px;
       text-align: center;
-      font-family: "Circular Std", serif;
-      color: #282520;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      color: var(--color-darkgr);
       padding: 0 15px;
       margin-bottom: 40px;
     }
@@ -38,7 +38,7 @@
 
         .things-to-do__card {
           background-color: var(--color-bg);
-          border: 1px solid #ffffff;
+          border: 1px solid var(--color-bg);
           border-radius: 12px;
           text-align: center;
           overflow: hidden;
@@ -54,23 +54,23 @@
           }
 
           .things-to-do__subtitle {
-            font-size: 1.375rem;
-            font-family: "Circular Std", serif;
-            color: #282520;
+            font-size: 22px;
+            font-family: "Plus Jakarta Sans", serif;
+            color: var(--color-darkgr);
             margin-bottom: 8px;
           }
 
           .things-to-do__price {
-            font-size: 1.25rem;
-            font-family: "Circular Std", serif;
-            color: #f98250;
+            font-size: 20px;
+            font-family: "Plus Jakarta Sans", serif;
+            color: var(--color-accent-3);
             margin-bottom: 20px;
           }
 
           .things-to-do__description {
-            font-size: 1rem;
+            font-size: 16px;
             font-family: "Roboto", sans-serif;
-            color: #848484;
+            color: var(--color-lightgr);
           }
         }
       }
