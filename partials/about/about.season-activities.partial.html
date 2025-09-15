@@ -1,5 +1,5 @@
 <!--Maria Batoorina-->
-<section class="season-activities">
+<section class="season-activities-winter">
   <div class="season-activities__winter-section">
     <h2 class="season-activities__title">Season Activities</h2>
 
@@ -35,7 +35,7 @@
   </div>
 </section>
 
-<section class="season-activities-spa">
+<section class="season-activities-summer">
   <div class="season-activities__container">
     <article class="season-activities__summer">
       <div class="season-activities__content">
@@ -69,66 +69,57 @@
       </div>
     </article>
   </div>
+  </section>
 
-  <div class="season-activities__container">
-    <article class="season-activities__spa">
-      <div class="season-activities__spa-section">
-        <div class="season-activities__content">
-          <h3 class="season-activities__subtitle">SPA Vacations</h3>
-          <p class="season-activities__text">
-            Our bespoke spa vacations offer something unique for everyone in our
-            spa center. Improve your well-being by paying special attention to
-            our specialized spa procedures, yoga classes, Ayurveda, weight loss
-            program, and fitness classes. Supplement your daily wellness with
-            healthy cuisine for optimal health and wellness.
-          </p>
-        </div>
-        <div class="season-activities__spa-image">
-          <img
-            class="season-activities__image"
-            src="img/season-activities/spa-vacation.webp"
-            alt="Spa Vacation in Yosemite"
-          />
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
+ <section class="season-activities-spa">
+   <div class="season-activities__container">
+     <div class="spa-content">
+       <h3 class="season-activities__subtitle">SPA Vacations</h3>
+       <p class="season-activities__text">
+         Our bespoke spa vacations offer something unique for everyone in our
+         spa center. Improve your well-being by paying special attention to
+         our specialized spa procedures, yoga classes, Ayurveda, weight loss
+         program, and fitness classes. Supplement your daily wellness with
+         healthy cuisine for optimal health and wellness.
+       </p>
+     </div>
+     <div class="season-activities__spa-image">
+       <img
+         class="season-activities__image"
+         src="img/season-activities/spa-vacation.webp"
+         alt="Spa Vacation in Yosemite"
+       />
+     </div>
+   </div>
+ </section>
 
-<section class="any-question">
-  <div class="any-question__image-wrapper">
+<section class="any-questions">
+  <div class="any-questions__image-wrapper">
     <img
-      class="any-question__image"
-      width="670"
+      class="any-questions__image"
       src="img/season-activities/season-activities-background.jpeg"
       alt="Aerial view of a wooden bridge over a river in the forest"
     />
+    <div class="any-questions__content">
+      <div class="any-questions__text">
+        <h2 class="any-questions__title">Any questions?</h2>
+        <p class="any-questions__subtitle">
+          Complete the form and our manager will contact you as soon as possible
+        </p>
+      </div>
+
+      <form class="any-questions__form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </div>
-  <div class="any-question__content">
-    <h2 class="any-question__title">Any questions?</h2>
-    <p class="any-question__text">
-      Complete the form and our manager will contact you as soon as possible.
-    </p>
-  </div>
-  <form
-    class="questions__form"
-    action="https://formspree.io/f/mwpnwawn"
-    method="post"
-  >
-    <input
-      class="questions__input"
-      type="text"
-      name="name"
-      placeholder="Name"
-      required
-    />
-    <input
-      class="questions__input"
-      type="tel"
-      name="phone"
-      placeholder="Phone Number"
-      required
-    />
-    <button class="questions__btn" type="submit">Send</button>
-  </form>
 </section>
+
+

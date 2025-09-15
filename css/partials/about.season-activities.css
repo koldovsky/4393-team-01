@@ -1,39 +1,28 @@
-
 .season-activities {
   padding: 40px 20px;
 }
 
 .season-activities__container {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0 80px; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
 }
 
-.season-activities__item {
-  position: relative;
-  padding-left: 20px;
-}
-
-.season-activities__item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Cpath fill='orange' d='M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 .season-activities__title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.75rem;
+  font-weight: border-box;
   text-align: center;
-  margin-bottom: 36px;
-  letter-spacing: -0.5px;
+  margin-bottom: 40px;
   color: #222;
-  padding: 0 20px;
+  padding: 0 80px;
+}
+
+.season-activities__subtitle {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: left;
 }
 
 .season-activities__winter,
@@ -45,28 +34,12 @@
   gap: 20px;
 }
 
-.season-activities__winter-section, .season-activities__spa-section {
-  background-color: #e5e7eb;
-  padding: 40px 20px;
-}
-
-.season-activities__subtitle {
-  margin-top: 20px;  
-  margin-bottom: 16px; 
-  font-size: 1.5rem;   
-  font-weight: bold;   
-}
-
 .season-activities__content {
   flex: 1;
 }
 
-.season-activities__subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
 .season-activities__text {
+  text-align: left;
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -82,15 +55,25 @@
   align-items: center;
   margin-bottom: 8px;
   font-size: 1rem;
+  padding-left: 20px;
+  position: relative;
 }
 
-.activities__icon {
-  margin-right: 8px;
+.season-activities__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Cpath fill='orange' d='M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .season-activities__winter-image,
-.season-activities__summer-image,
-.season-activities__spa-image {
+.season-activities__summer-image {
   flex: 1;
   position: relative;
 }
@@ -101,24 +84,115 @@
   border-radius: 8px;
 }
 
-@media (max-width: 678px) {
+.season-activities-spa,
+.season-activities-winter {
+  width: 100%;
+  background-color: #e9e9e7;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.season-activities-spa .spa-content {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.any-questions {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.any-questions__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.any-questions__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.any-questions__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+}
+
+.any-questions__text {
+  max-width: 45%;
+}
+
+.any-questions__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.any-questions__subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.any-questions__form {
+  width: 387.5px;
+  height: 315.9px;
+  background: rgba(40, 37, 32, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.any-questions__form input,
+.any-questions__form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.any-questions__form button {
+  padding: 10px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.any-questions__form button:hover {
+  background-color: orange;
+}
+
+@media (max-width: 768px) {
   .season-activities__winter,
-  .season-activities__summer,
-  .season-activities__spa {
+  .season-activities__summer {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .season-activities__image {
-    max-width: 100%;
+  .any-questions__container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
   }
 
-  .season-activities__content {
-    margin-top: 16px;
+  .any-questions__form {
+    width: 100%;
+    height: auto;
   }
-
-  .season-activities__item {
-    justify-content: center;
-  }
-} 
+}
