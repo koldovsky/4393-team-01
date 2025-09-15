@@ -5,7 +5,7 @@
     <p class="accommodation-contact-form__subtitle">
       Complete the form below to make a reservation
     </p>
-    <form action="" class="accommodation-contact-form__form">
+<form action="" class="accommodation-contact-form__form" onsubmit="return false;">
       <div class="accommodation-contact-form__group">
         <div class="accommodation-contact-form__field">
           <input
@@ -41,13 +41,19 @@
             placeholder="Check out date"
           />
         </div>
-        <div class="accommodation-contact-form__field">
+        <div class="accommodation-contact-form__field custom-select-wrapper">
+          <svg class="select-arrow" width="12" height="12" viewBox="0 0 14 8">
+            <path
+              d="M7.7 7.7l6-6c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L7 5.6 1.7.299999c-.4-.4-1-.4-1.4 0-.2.2-.3.4-.3.7C0 1.3.1 1.5.3 1.7l6 6c.2.2.5.3.7.3.3 0 .5-.1.7-.3z"
+            ></path>
+          </svg>
+
           <select
             name="guests"
             class="accommodation-contact-form__select"
             required
           >
-            <option value="">Cabin type</option>
+            <option value="" disabled selected hidden>Cabin type</option>
             <option value="1">Cabin Classic</option>
             <option value="2">Cabin Superior</option>
             <option value="3">Cabin Superior+</option>
@@ -56,7 +62,7 @@
           </select>
         </div>
       </div>
-      <button type="button" class="accommodation-contact-form__btn">
+      <button type="submit" class="accommodation-contact-form__btn">
         Make a reservation
       </button>
     </form>

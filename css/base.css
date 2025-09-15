@@ -42,6 +42,8 @@ video {
   --color-accent-3: #f98250;
   --color-lightgr:#848484;
   --color-darkgr:#282520;
+  --color-lightgr-bg:#2825201F;
+  --color-btn-hover:#599673;
   --radius: 12px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }

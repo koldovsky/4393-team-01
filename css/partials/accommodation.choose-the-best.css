@@ -1,0 +1,90 @@
+.accommodation-contact-form {
+  background: url("../../img//accommodation.choose-the-best/accommodation-contact-form-bg.jpg")
+    no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+
+  .accommodation-contact-form__box {
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    padding: 2.5rem 3.1rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    max-width: 380px;
+
+    .accommodation-contact-form__title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-darkgr);
+      margin-bottom: 1rem;
+    }
+    .accommodation-contact-form__subtitle {
+      font-size: 0.75rem;
+      font-family: "Roboto", sans-serif;
+      color: var(--color-lightgr);
+      margin-bottom: 2.4rem;
+    }
+
+    .accommodation-contact-form__group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      .accommodation-contact-form__input,
+      .accommodation-contact-form__select {
+        border: none;
+        background-color: var(--color-lightgr-bg);
+        padding: 0.8rem 1rem;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        width: 100%;
+        cursor: pointer;
+        color: var(--color-darkgr);
+        appearance: none;
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+
+      .accommodation-contact-form__input:focus,
+      .accommodation-contact-form__select:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.8px var(--color-lightgr);
+      }
+      .custom-select-wrapper {
+        position: relative;
+        display: inline-block;
+
+        .select-arrow {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          fill: var(--color-lightgr);
+        }
+      }
+    }
+    .accommodation-contact-form__btn {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      cursor: pointer;
+      font-weight: 600;
+      background-color: var(--color-accent-3);
+      color: var(--color-bg);
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+    .accommodation-contact-form__btn:hover {
+      background-color: var(--color-btn-hover);
+    }
+  }
+}
