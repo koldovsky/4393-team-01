@@ -1,6 +1,4 @@
-/* =========================
-   Global Footer
-   ========================= */
+/* Maryna Huz */
 
 .footer {
   background: var(--color-bg);
@@ -9,12 +7,13 @@
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
   max-width: var(--content-max);
   margin-inline: auto;
   padding-inline: var(--gutter);
+  gap: 0;
 }
 
 /* Brand / Logo */
@@ -33,10 +32,6 @@
   text-align: center;
 }
 .footer__menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
