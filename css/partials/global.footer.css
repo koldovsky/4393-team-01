@@ -97,11 +97,24 @@
     padding-inline: var(--gutter);
   }
 
+  .footer__brand {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .footer__nav {
     text-align: left;
   }
 
   .footer__social {
     text-align: right;
+  }
+
+  .footer__menu {
+    align-items: flex-start;
+  }
+
+  .footer__social-list {
+    justify-content: flex-end;
   }
 }
