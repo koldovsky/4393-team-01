@@ -9,12 +9,16 @@
   background-color: var(--color-bg);
 }
 
+.gallery__title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
 
-.gallery__title{
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--color-text);
-    margin-bottom: 1.5rem;
+.gallery__images {
+  flex: 1 1 auto;
+  max-width: 400px;
 }
 
 .gallery__image {
