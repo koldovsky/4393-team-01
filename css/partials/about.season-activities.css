@@ -1,3 +1,4 @@
+
 .season-activities {
   padding: 40px 20px;
 }
@@ -6,9 +7,25 @@
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 0 80px; 
-  
 }
 
+.season-activities__item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.season-activities__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Cpath fill='orange' d='M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .season-activities__title {
   font-size: 2rem;
   font-weight: 700;
