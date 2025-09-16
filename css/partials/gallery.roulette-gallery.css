@@ -16,7 +16,7 @@
     text-transform: uppercase;
   }
 
-  .gallery__filetr-list{
+  .gallery__filter-list{
     display: flex;
     flex-direction: row;
   }
