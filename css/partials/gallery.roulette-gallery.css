@@ -26,6 +26,8 @@
   .gallery__images {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 0 calc(var(--w-grid-gap) / 4);
+    margin-top: calc(var(--w-grid-gap) / 2);
   }
 
   .gallery__image {
@@ -46,8 +48,6 @@
     width: 100%;
     max-width: 100%;
     grid-column: span 4;
-    
-   
   }
 
   .gallery__image:hover {
