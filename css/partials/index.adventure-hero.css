@@ -1,10 +1,37 @@
-/*Andrew Khrushch start*/
-/* Adventure section */
+/* Andrew Khrushch start */
 .adventure {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 10px; 
+  padding: 20px 10px;
   box-sizing: border-box;
+  max-width: 1400px;
+}
+.tree-img {
+  position: absolute;
+  top: 0;
+  width: auto; /* можна змінювати розмір */
+  height: 500px;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.left-tree-img {
+  left: 0;
+    transform: translateY(1300px);
+}
+
+.right-tree-img {
+  right: 0;
+  transform: scaleX(-1) translateY(1300px);;
+}
+
+.adventure__inner {
+  position: relative;
+  z-index: 1;
 }
 
 .adventure__title {
@@ -28,7 +55,7 @@
 .adventure__list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   padding: 0;
   margin: 0;
@@ -43,10 +70,18 @@
 
 .adventure__image {
   width: 100%;
-  height: 140px; 
+  height: 140px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 8px;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s, border 0.3s;
+  border: 2px solid transparent;
+}
+
+.adventure__image:hover {
+  transform: scale(1.1);
+  border: 2px solid #3a5a40;
+  box-shadow: 0 6px 24px 0 rgba(23, 162, 116, 0.1);
 }
 
 .adventure__name {
@@ -55,7 +90,6 @@
   font-weight: bold;
   color: #000;
 }
-
 
 @media (min-width: 768px) {
   .adventure {
@@ -88,7 +122,7 @@
 /* десктоп */
 @media (min-width: 1200px) {
   .adventure {
-    max-width: 1400px; 
+    max-width: 1400px;
     padding: 40px 20px;
   }
 
@@ -120,4 +154,4 @@
   }
 }
 
-/*Andrew Khrushch end*/
+/* Andrew Khrushch end */
