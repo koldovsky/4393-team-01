@@ -139,53 +139,36 @@
 }
 
 .any-questions {
-  position: relative;
-  width: 100%;
-  min-height: 576px;
-  overflow: hidden;
-}
-
-.any-questions__image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 576px;
-  padding: 80px 0;
-  margin: 0;
-  border: none;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.any-questions__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.6);
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+    url("../../img/season-activities/season-activities-background.jpeg");
+  background-position: center center;
+  background-size: cover; /* или contain, в зависимости от нужного эффекта */
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: #fff;
+  min-height: 500px; /* Регулируйте по необходимости */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .any-questions__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
   max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: center;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  z-index: 2;
 }
 
 .any-questions__text {
-  max-width: 45%;
+  text-align: left;
 }
 
 .any-questions__title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .any-questions__subtitle {
@@ -194,23 +177,23 @@
 }
 
 .any-questions__form {
-  width: 387.5px;
-  background: rgba(40, 37, 32, 0.8);
+  background: rgba(255, 255, 255, 0.15);
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
+  max-width: 380px;   
+  width: 100%;       
 }
 
 .any-questions__form input,
 .any-questions__form textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 20px;
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.24);
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
 }
 
 .any-questions__form input::placeholder,
@@ -219,13 +202,13 @@
 }
 
 .any-questions__form button {
-  padding: 12px;
-  background-color: darkorange;
-  color: #fff;
+  background: orange;
   border: none;
-  border-radius: 20px;
+  padding: 12px;
+  border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -303,10 +286,7 @@
     text-align: left;
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
-  .season-activities-spa .season-activities__container {
+   .season-activities-spa .season-activities__container {
     display: flex;
     flex-direction: column;
   }
@@ -321,18 +301,13 @@
   }
 
   .any-questions__content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
     gap: 30px;
   }
 
   .any-questions__text {
-    max-width: 100%;
-  }
-
-  .any-questions__form {
-    width: 100%;
-    max-width: 400px;
+    text-align: center;
   }
 
   .any-questions__title {
@@ -340,7 +315,12 @@
   }
 
   .any-questions__subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .any-questions__form {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
