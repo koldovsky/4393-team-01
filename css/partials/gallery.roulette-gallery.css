@@ -24,8 +24,8 @@
   }
 
   .gallery__images {
-    flex: 1 1 auto;
-    max-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
   }
 
   .gallery__image {
