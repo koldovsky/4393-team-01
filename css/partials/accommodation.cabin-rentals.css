@@ -2,6 +2,7 @@ body {
   background: #f4f3ef;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .accommodation-cabin-rentals {
@@ -9,13 +10,14 @@ body {
 }
 
 .accommodation-cabin-rentals__title {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 550;
   text-align: center;
   margin-bottom: 36px;
   letter-spacing: -0.5px;
   color: #222;
-  padding: 0 20px; /* Додано horizontal padding тільки для заголовка */
+  padding: 0 20px; 
 }
 
 .accommodation-cabin-rentals__list {
@@ -34,21 +36,21 @@ body {
   overflow: visible;
   display: flex;
   flex-direction: column;
-  padding: 40px 0; /* Тільки вертикальні відступи */
+  padding: 40px 0; 
   margin: 0;
-  width: 100%; /* На всю ширину */
+  width: 100%; 
 }
 
-/* Альтернуючі кольори фону - на всю ширину */
+
 .accommodation-cabin-rentals__item:nth-child(odd) {
-  background: #e5e7eb; /* Сірий фон */
+  background: #e5e7eb; 
 }
 
 .accommodation-cabin-rentals__item:nth-child(even) {
-  background: #ffffff; /* Білий фон */
+  background: #ffffff; 
 }
 
-/* Контейнер для контенту з обмеженою шириною */
+
 .accommodation-cabin-rentals__content {
   max-width: 1000px;
   margin: 0 auto;
@@ -79,8 +81,9 @@ body {
 
 .accommodation-cabin-rentals__price {
   font-size: 1.45rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 2px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .accommodation-cabin-rentals__price .price-amount {
@@ -92,8 +95,9 @@ body {
 }
 
 .accommodation-cabin-rentals__name {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.19rem;
-  font-weight: 600;
+  font-weight: 550;
   margin: 0 0 6px 0;
   color: #232323;
 }
@@ -108,11 +112,12 @@ body {
 }
 
 .accommodation-cabin-rentals__detail {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   font-size: 1.03rem;
   color: #444;
-  font-weight: 500;
+  font-weight: 350;
 }
 
 .icon-placeholder {
@@ -139,6 +144,8 @@ body {
 }
 
 .accommodation-cabin-rentals__features {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 350;
   font-size: 0.97rem;
   color: #242220;
   margin: 0 0 0 0;
@@ -147,14 +154,15 @@ body {
 }
 
 .accommodation-cabin-rentals__btn {
+  font-family: 'Roboto', sans-serif;
   margin-top: 18px;
   align-self: flex-start;
-  background: #f97316;
+  background: #fb832d;
   color: #fff;
   padding: 10px 24px;
   border: none;
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.95rem;
   letter-spacing: 0.2px;
   cursor: pointer;
@@ -178,11 +186,13 @@ body {
     height: 320px;
   }
   .accommodation-cabin-rentals__price {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
   }
   .accommodation-cabin-rentals__btn {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.05rem;
-    padding: 12px 28px;
+    padding: 12px 18px;
   }
 }
 
@@ -197,26 +207,28 @@ body {
     padding: 0 80px;
   }
   .accommodation-cabin-rentals__image {
-    width: 450px;
-    min-width: 450px;
-    height: 320px;
+    width: 600px;
+    min-width: 600px;
+    height: 420px;
     object-fit: cover;
     margin: 0;
   }
   .accommodation-cabin-rentals__info {
-    width: calc(100% - 450px - 40px);
+    width: calc(100% - 600px - 40px);
     padding: 0;
     gap: 12px;
     justify-content: flex-start;
   }
   .accommodation-cabin-rentals__price {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
   }
   .accommodation-cabin-rentals__name {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.35rem;
   }
   .accommodation-cabin-rentals__btn {
     margin-top: 20px;
-    padding: 12px 28px;
+    padding: 12px 18px;
   }
 }
