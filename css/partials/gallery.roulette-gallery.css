@@ -19,6 +19,7 @@
   .gallery__filter-list{
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
 
   .gallery__images {
