@@ -5,7 +5,6 @@
 .season-activities__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .season-activities__title {
@@ -36,12 +35,20 @@
 
 .season-activities__content {
   flex: 1;
+  min-width: 0;
+}
+
+.season-activities__text,
+.season-activities__spa-text,
+.any-questions__subtitle {
+  text-align: justify;
 }
 
 .season-activities__text {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 15px;
   line-height: 1.5;
+  width: 100%;
 }
 
 .season-activities__list {
@@ -55,7 +62,7 @@
   align-items: center;
   margin-bottom: 8px;
   font-size: 1rem;
-  padding-left: 28px; 
+  padding-left: 28px;
   position: relative;
 }
 
@@ -65,7 +72,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px; 
+  width: 20px;
   height: 20px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Cpath fill='orange' d='M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z'/%3E%3C/svg%3E");
   background-size: contain;
@@ -80,8 +87,8 @@
 
 .season-activities__image {
   width: 100%;
-    height: 324px;
-  object-fit: cover; 
+  height: 324px;
+  object-fit: cover;
   border-radius: 8px;
   display: block;
 }
@@ -94,19 +101,47 @@
   padding: 60px 20px;
 }
 
+.season-activities__spa-text {
+  line-height: 1.5;
+  color: #555;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.season-activities__spa-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.season-activities-spa .season-activities__image {
+  width: 100%;
+  height: 324px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
 .season-activities-spa .spa-content {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto 40px auto;
 }
 
+.season-activities__spa-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 .spa-subtitle .spa-text {
-text-align: center;
+  text-align: center;
 }
 
 .any-questions {
   position: relative;
   width: 100%;
-  min-height: 576px; 
+  min-height: 576px;
   overflow: hidden;
 }
 
@@ -208,16 +243,81 @@ text-align: center;
   .season-activities__winter,
   .season-activities__summer {
     flex-direction: column;
-    text-align: center;
-    gap: 30px;
+    gap: 20px;
   }
 
-  .season-activities__subtitle {
-    text-align: center;
+  .season-activities__winter {
+    flex-direction: column;
   }
 
+  .season-activities__winter .season-activities__winter-image {
+    order: -1;
+  }
+
+  .season-activities__summer {
+    flex-direction: column;
+  }
+
+  .season-activities__summer .season-activities__content {
+    order: -1;
+  }
+
+  .season-activities__content {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .season-activities__winter-section {
+    padding: 0;
+  }
+
+  .season-activities__text,
+  .season-activities__spa-text {
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .season-activities-winter,
+  .season-activities-summer,
+  .season-activities-spa {
+    padding: 60px 20px;
+  }
+
+  .season-activities__winter-image,
+  .season-activities__summer-image {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .season-activities__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .season-activities__subtitle,
   .season-activities__text {
-    text-align: center;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .season-activities-spa .season-activities__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spa-content {
+    order: -1;
+    padding: 0 20px;
+  }
+
+  .season-activities__spa-image {
+    padding: 0 20px;
   }
 
   .any-questions__content {
