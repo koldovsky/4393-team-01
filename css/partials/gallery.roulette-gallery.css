@@ -29,14 +29,25 @@
   }
 
   .gallery__image {
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-top: 0;
+    grid-row: span 2;
+      grid-row-start: span 2;
+      grid-row-end: auto;
+    grid-column: span 8;
+      grid-column-start: span 8;
+      grid-column-end: auto;
     max-width: 50%;
+    padding: 0 calc(var(--w-grid-gap) / 4);
+    margin-top: calc(var(--w-grid-gap) / 2);
     flex-basis: 50%;
     position: relative;
     width: 100%;
     max-width: 100%;
     grid-column: span 4;
-    padding: 0 calc(var(--w-grid-gap) / 4);
-    margin-top: calc(var(--w-grid-gap) / 2);
+    
+   
   }
 
   .gallery__image:hover {
