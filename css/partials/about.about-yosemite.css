@@ -1,0 +1,56 @@
+#about-yosemite {
+    background: url("../../img/about.about-yosemite/background-yosemite.jpeg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: var(--color-lightgr-bg);
+}
+
+.about-wrapper {
+    padding: 5rem 1.5rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    aspect-ratio: 2.05 / 1;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-content {
+    margin-top: 45px;
+}
+
+.header-yosemite {
+    color: var(--color-title);
+    font-weight: 700;
+}
+
+.intro-text {
+    margin-top: 25px;
+    line-height: 1.9rem;
+    color: var(--color-title);
+    font-size: 19px;
+}
+
+.details-text {
+    margin-top: 25px;
+    line-height: 1.6rem;
+    color: var(--color-title);
+    font-size: 1rem;
+}
+
+@media (min-width: 613px){
+    .header-yosemite{
+        font-size: 2.75rem;
+    }
+    .intro-text {
+        margin-top: 1.875rem;
+    }
+    .details-text {
+        margin-top: 45px;
+    }
+}

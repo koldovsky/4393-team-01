@@ -37,6 +37,7 @@ video {
   --color-bg: #ffffff;
   --color-surface: #d3d9e0;
   --color-text: #000000;
+  --color-title: #282520;
   --color-muted: #2a2c30;
   --color-accent: #f97316;
   --color-accent-2: #22c55e;
@@ -58,7 +59,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 1.875rem;
   line-height: 1.3;
 }
 
