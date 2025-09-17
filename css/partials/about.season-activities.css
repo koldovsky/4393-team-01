@@ -140,14 +140,14 @@
 
 .any-questions {
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
     url("../../img/season-activities/season-activities-background.jpeg");
   background-position: center center;
-  background-size: cover; /* или contain, в зависимости от нужного эффекта */
+  background-size: cover; 
   background-repeat: no-repeat;
   padding: 60px 20px;
   color: #fff;
-  min-height: 500px; /* Регулируйте по необходимости */
+  min-height: 500px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,9 +177,9 @@
 }
 
 .any-questions__form {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(44, 40, 33, 0.8);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -189,23 +189,23 @@
 
 .any-questions__form input,
 .any-questions__form textarea {
-  background: transparent;
-  border: 1px solid #fff;
-  padding: 10px;
-  border-radius: 8px;
+  background: rgba(89, 88, 85, 0.6);
+  border: none;;
+  padding: 12px 16px;
+  border-radius: 16px;
   color: #fff;
 }
 
 .any-questions__form input::placeholder,
 .any-questions__form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(169, 168, 166, 0.7);
 }
 
 .any-questions__form button {
-  background: orange;
+  background: #f98251;
   border: none;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 24px;
   font-weight: bold;
   cursor: pointer;
   color: #fff;
