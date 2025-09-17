@@ -1,0 +1,122 @@
+.hero {
+  position: relative;
+  padding-block: 0;
+  isolation: isolate;
+}
+
+.hero__background {
+  block-size: clamp(420px, 62vh, 726px);
+}
+.hero__background img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  inline-size: min(92vw, 300px);
+  min-block-size: 360px;
+  padding: 18px 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0 0 10px;
+  font-size: 25px;
+  line-height: 1.25;
+}
+.hero__subtitle {
+  margin: 0 0 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-muted, #6f6f6f);
+  line-height: 1.5;
+}
+
+.hero__form {
+  display: grid;
+  gap: 14px;
+  inline-size: 100%;
+}
+.hero__label {
+  text-align: left;
+  font-size: 14px;
+}
+.hero__input {
+  inline-size: 100%;
+  block-size: 52px;
+  border: 1px solid #ececec;
+  background: #f6f6f6;
+  border-radius: 999px;
+  padding: 0 18px;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+.hero__input:focus {
+  border-color: #f98250;
+  box-shadow: 0 0 0 3px rgba(249, 130, 80, 0.15);
+}
+.hero__button {
+  block-size: 56px;
+  border: 0;
+  border-radius: 999px;
+  background: #f98250;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) and (max-width: 899.98px) {
+  .hero__content {
+    inset-inline-start: auto;
+    inset-inline-end: max(
+      var(--gutter),
+      calc((100vw - var(--content-max)) / 2)
+    );
+    transform: translateY(-50%);
+    inline-size: 340px;
+    min-block-size: 380px;
+    padding: 20px 24px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__background {
+    block-size: 726px;
+  }
+  .hero__background img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .hero__content {
+    inset-inline-start: auto;
+    inset-inline-end: max(
+      var(--gutter),
+      calc((100vw - var(--content-max)) / 2)
+    );
+    transform: translateY(-50%);
+    inline-size: 470px;
+    min-block-size: 446.8px;
+    padding: 32px 34px;
+  }
+  .hero__input {
+    block-size: 56px;
+  }
+  .hero__button {
+    block-size: 64px;
+  }
+}

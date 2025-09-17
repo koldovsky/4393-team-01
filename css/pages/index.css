@@ -9,6 +9,7 @@
 @import url("../partials/global.footer.css");
 
 /* Index partials */
+@import url("../partials/index.hero.css");
 @import url("../partials/index.adventure-hero.css");
 @import url("../partials/index.cabin-rentals.css");
 @import url("../partials/index.things-to-do.css");
