@@ -54,3 +54,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 17. Dmytro Honcharenko – (how-to-get-there.guide.partial.html)  
 18. Stanislav Kustov – (how-to-get-there.html, how-to-get-there.map-contact.partial.html)  
 19. Yaroslav Milevskyi – (about.about-yosemite-gallery.partial.html) NOT ADDED  
+20. Oleksandr Vasuliuk - (about.spa-vacations.partial.html) NOT ADDED
