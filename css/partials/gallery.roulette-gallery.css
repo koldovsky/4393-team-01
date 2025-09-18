@@ -1,9 +1,3 @@
-:root {
-  --color-bg: #ffffff;
-  --color-text: #1a1a1a;
-  --color-accent: #7a5c3a;
-}
-
 .gallery {
   padding: 2rem 1rem;
   background-color: var(--color-bg);
