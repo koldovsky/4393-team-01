@@ -3,8 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Cabin Rental</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="img/favicon/android-chrome-512x512.png"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -26,12 +55,12 @@
         data-hx-get="partials/global/global.header-nav.partial.html"
       ></nav>
     </header>
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="partials/index/index.hero.partial.html"
-    ></div>
     <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.hero.partial.html"
+      ></section>
       <!--Andrii Khrushch part 2 start -->
       <section
         data-hx-trigger="load"
