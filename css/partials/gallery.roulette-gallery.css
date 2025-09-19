@@ -67,7 +67,6 @@
   transform: scale(1.05);
 }
 
-/* ---- Адаптивність ---- */
 @media (min-width: 400px) {
   .gallery__images {
     grid-template-columns: 2fr 1fr;
