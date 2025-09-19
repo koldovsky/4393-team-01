@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   width: auto;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   pointer-events: none;
   z-index: 0;
@@ -20,11 +20,11 @@
 }
 .adventure-hero__tree-img--left {
   left: 0;
-  transform: translateY(1300px);
+  transform: translateY(1100px);
 }
 .adventure-hero__tree-img--right {
   right: 0;
-  transform: scaleX(-1) translateY(1300px);
+  transform: scaleX(-1) translateY(1100px);
 }
 .adventure-hero__section {
   z-index: 1;
