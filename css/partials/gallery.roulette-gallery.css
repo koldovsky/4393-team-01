@@ -63,10 +63,6 @@
   transition: transform 0.3s ease;
 }
 
-.gallery__image:hover {
-  transform: scale(1.05);
-}
-
 @media (min-width: 400px) {
   .gallery__images {
     grid-template-columns: 2fr 1fr;
@@ -89,9 +85,4 @@
   }
 }
 
-@media (min-width: 700px) {
-  .gallery__images {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: none;
-  }
-}
+
