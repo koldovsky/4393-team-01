@@ -1,5 +1,3 @@
-/* Maryna Huz */
-
 .footer {
   background: var(--color-bg);
   padding-top: 80px;
@@ -8,7 +6,6 @@
   color: var(--color-text);
 }
 
-/* Container - mobile first: single column */
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -18,7 +15,6 @@
   margin-inline: auto;
 }
 
-/* Brand / Logo */
 .footer__brand {
   display: flex;
   justify-content: center;
@@ -31,7 +27,6 @@
   height: auto;
 }
 
-/* Navigation */
 .footer__nav {
   text-align: center;
 }
@@ -61,7 +56,6 @@
   text-decoration: none;
 }
 
-/* Socials */
 .footer__social {
   text-align: center;
 }
@@ -92,7 +86,6 @@
   object-fit: contain;
 }
 
-/* Desktop & Larger Screens */
 @media (min-width: 900px) {
   .footer__container {
     display: grid;
@@ -116,6 +109,7 @@
 
   .footer__menu {
     align-items: flex-start;
+    gap: 30px;
   }
 
   .footer__social-list {
