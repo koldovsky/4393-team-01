@@ -3,7 +3,7 @@
 .footer {
   background: var(--color-bg);
   padding-top: 80px;
-  padding-inline: 15px;
+  padding-inline: 40px;
   padding-bottom: 15px;
   color: var(--color-text);
 }
@@ -12,6 +12,7 @@
 .footer__container {
   display: flex;
   flex-direction: column;
+  
   gap: 20px;
   max-width: var(--content-max);
   margin-inline: auto;
