@@ -3,7 +3,7 @@
 .footer {
   background: var(--color-bg);
   padding-top: 80px;
-  padding-inline: 40px;
+  padding-inline: 15px;
   padding-bottom: 15px;
   color: var(--color-text);
 }
@@ -12,8 +12,8 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-
-  gap: 20px;
+  padding-inline: 0px;
+  gap: 40px;
   max-width: var(--content-max);
   margin-inline: auto;
 }
@@ -53,7 +53,7 @@
   transition: color 0.2s ease;
 }
 .footer__nav--primary .footer__menu-link {
-  font-weight: 600;
+  font-weight: 500;
 }
 .footer__menu-link:hover,
 .footer__menu-link:focus {
@@ -67,8 +67,8 @@
 }
 .footer__social-title {
   font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 0px;
 }
 .footer__social-list {
   list-style: none;
@@ -78,6 +78,7 @@
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 .footer__social-link {
   display: inline-flex;
