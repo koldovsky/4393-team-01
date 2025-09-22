@@ -12,7 +12,7 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  
+
   gap: 20px;
   max-width: var(--content-max);
   margin-inline: auto;
@@ -48,9 +48,12 @@
 
 .footer__menu-link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-text);
   transition: color 0.2s ease;
+}
+.footer__nav--primary .footer__menu-link {
+  font-weight: 600;
 }
 .footer__menu-link:hover,
 .footer__menu-link:focus {
