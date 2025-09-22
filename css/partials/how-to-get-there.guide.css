@@ -1,0 +1,35 @@
+.guide__images {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.guide__images img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.guide__images-left {
+  display: grid;
+  grid-template-rows: auto; 
+  grid-gap: 15px;
+}
+
+@media (min-width: 769px) {
+  .guide__images {
+    grid-template-columns: 2fr 1fr; 
+  }
+
+  .guide__images-left {
+    grid-template-rows: 1fr 1fr; 
+  }
+
+  .guide__images-left img {
+    height: 100%; 
+  }
+}
