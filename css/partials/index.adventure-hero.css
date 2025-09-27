@@ -55,6 +55,27 @@
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
 }
+.adventure-hero__controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adventure-hero__controls button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  background: var(--color-darkgr);
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.adventure-hero__controls button:hover {
+  background: var(--color-borderhover);
+}
+
 .adventure-hero__list {
   list-style: none;
   display: grid;
