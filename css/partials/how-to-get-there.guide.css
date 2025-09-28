@@ -11,7 +11,7 @@
 
   background-color: rgb(243, 243, 242);
   --bg: url("../../img/how-to-get-there/guide-background.jpg");
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
     var(--bg);
   background-position: 50% 50%;
@@ -59,12 +59,14 @@
   font-size: 16px;
   line-height: 1.5;
 }
+
 /* Icons */
 .guide__way {
   display: flex;
   align-items: flex-start;
   gap: 15px;
 }
+
 .guide__icon {
   flex: 0 0 50px;
   height: 50px;
@@ -80,11 +82,12 @@
   width: 26px;
   height: 26px;
 }
+
 /* Image Section */
 
 .guide__images {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   grid-gap: 15px;
   max-width: 900px;
   margin: auto;
@@ -92,7 +95,7 @@
 
 .guide__images img {
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -100,32 +103,40 @@
 
 .guide__images-left {
   display: grid;
-  grid-template-rows: auto; 
+  grid-template-rows: auto;
   grid-gap: 15px;
 }
 
 @media (min-width: 769px) {
   .guide__title {
-  font-size: 44px;
+    font-size: 39px;
   }
+  
   .guide__images {
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr;
   }
 
   .guide__images-left {
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
   }
 
   .guide__images-left img {
-    height: 100%; 
+    height: 100%;
   }
 
   .guide__icon img {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
   }
+
   .guide__icon {
-  flex: 0 0 70px;
-  height: 70px;
+    flex: 0 0 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 900px) {
+  .guide__title {
+    font-size: 44px;
   }
 }
