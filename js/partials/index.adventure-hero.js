@@ -99,10 +99,37 @@ if (shuffleBtn && sortBtn) {
     renderAdventureHeroItems(currentItems);
   });
 }
+function enableImagePopup() {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const captionText = document.getElementById("modalCaption");
+  const closeBtn = document.querySelector(".adventure-modal__close");
+
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("adventure-hero__image")) {
+      modal.style.display = "block";
+      modalImg.src = e.target.src;
+      modalImg.alt = e.target.alt;
+      captionText.textContent = e.target.alt;
+    }
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // Закриття по кліку поза зображенням
+  modal.onclick = function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+}
 
 function initialLoad() {
   updateSortButton();
   renderAdventureHeroItems(currentItems);
+  enableImagePopup();
 }
 
 if (document.readyState === "loading") {
@@ -110,4 +137,3 @@ if (document.readyState === "loading") {
 } else {
   initialLoad();
 }
-
