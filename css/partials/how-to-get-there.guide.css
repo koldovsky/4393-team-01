@@ -1,3 +1,87 @@
+.guide {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #282520;
+
+  position: relative;
+  display: block;
+  flex-basis: 100%;
+  min-width: 320px;
+
+  background-color: rgb(243, 243, 242);
+  --bg: url("../../img/how-to-get-there/guide-background.jpg");
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+    var(--bg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.guide__title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Plus Jakarta Sans', serif;
+}
+
+.guide__text {
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  font-size: 19px;
+}
+
+.guide__ways {
+  display: grid;
+  gap: 30px;
+  max-width: 750px;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+
+.guide__way {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.guide__way-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Plus Jakarta Sans', serif;
+}
+
+.guide__way-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Icons */
+.guide__way {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.guide__icon {
+  flex: 0 0 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide__icon img {
+  width: 26px;
+  height: 26px;
+}
+/* Image Section */
+
 .guide__images {
   display: grid;
   grid-template-columns: 1fr; 
@@ -31,5 +115,14 @@
 
   .guide__images-left img {
     height: 100%; 
+  }
+
+  .guide__icon img {
+  width: 40px;
+  height: 40px;
+  }
+  .guide__icon {
+  flex: 0 0 70px;
+  height: 70px;
   }
 }
