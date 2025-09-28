@@ -17,12 +17,11 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding: 80px 24px;
 }
 
 .guide__title {
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 700;
   margin-bottom: 20px;
   font-family: 'Plus Jakarta Sans', serif;
@@ -105,6 +104,9 @@
 }
 
 @media (min-width: 769px) {
+  .guide__title {
+  font-size: 44px;
+  }
   .guide__images {
     grid-template-columns: 2fr 1fr; 
   }
