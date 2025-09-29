@@ -1,4 +1,3 @@
-
 .adventure-hero {
   z-index: 1;
   overflow: hidden;
@@ -55,6 +54,27 @@
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
 }
+.adventure-hero__controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adventure-hero__controls button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  background: var(--color-darkgr);
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.adventure-hero__controls button:hover {
+  background: var(--color-borderhover);
+}
+
 .adventure-hero__list {
   list-style: none;
   display: grid;
@@ -75,7 +95,8 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 8px;
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s, border 0.3s;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s,
+    border 0.3s;
   border: 2px solid transparent;
 }
 .adventure-hero__image:hover {
@@ -88,6 +109,60 @@
   font-size: 14px;
   font-weight: bold;
   color: var(--color-text);
+}
+/* adventure-modal (BEM) */
+.adventure-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--color-modal-bg);
+}
+.adventure-modal__content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--color-modal-bxshdw);
+  animation: adventure-modal-zoomIn 0.3s ease;
+}
+
+@keyframes adventure-modal-zoomIn {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.adventure-modal__caption {
+  margin: 15px auto;
+  text-align: center;
+  color: var(--color-bg);
+  font-size: 18px;
+  font-family: "Circular Std", sans-serif;
+}
+
+.adventure-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: var(--color-bg);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.adventure-modal__close:hover {
+  color: var(--color-accent-red);
 }
 @media (min-width: 768px) {
   .adventure-hero__section {

@@ -48,6 +48,9 @@ video {
   --color-bxshdw:#17a2741a;
   --color-lightgr-bg:#2825201F;
   --color-btn-hover:#599673;
+  --color-modal-bg: rgba(0,0,0,0.8);
+  --color-modal-bxshdw:rgba(0,0,0,0.6);
+  --color-accent-red:#ff5555;
   --radius: 12px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
