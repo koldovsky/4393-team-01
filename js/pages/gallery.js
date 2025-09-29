@@ -1,4 +1,5 @@
 function init() {
+  import("../partials/index.header-menu.js");
   import("../partials/gallery.partial.js");
 }
 

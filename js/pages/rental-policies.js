@@ -1,6 +1,5 @@
 function init() {
   import("../partials/index.header-menu.js");
-  import("../partials/index.adventure-hero.js");
 }
 
 const totalPartials = document.querySelectorAll(
