@@ -1,0 +1,103 @@
+/* Our Facilities Section */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero секція */
+.hero {
+  background: url("../../img/index.our-facilities.partial/1018-1600x900.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 140px 20px 120px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn--primary {
+  background: #ff6b3d;
+  color: #fff;
+  border: none;
+}
+
+.btn--secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Ефект пензля */
+.brush-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  clip-path: polygon(
+    0% 70%,
+    10% 75%,
+    20% 60%,
+    30% 80%,
+    40% 65%,
+    50% 85%,
+    60% 68%,
+    70% 80%,
+    80% 62%,
+    90% 78%,
+    100% 65%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+/* Facilities секція */
+.facilities {
+  background: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.facilities h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.facilities__image {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.facilities .brush-divider {
+  background: #064e3b; /* зелений */
+  top: auto;
+  bottom: -1px;
+}
