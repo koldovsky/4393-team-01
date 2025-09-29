@@ -1,5 +1,6 @@
 function init() {
   import("../partials/index.header-menu.js");
+  import("../partials/about.about-yosemite.js");
 }
 
 const totalPartials = document.querySelectorAll(
