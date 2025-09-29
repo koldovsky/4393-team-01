@@ -46,7 +46,6 @@
     if (e.target.closest("a, button") && isMobile()) closeMenu();
   });
 
-  // Узгоджуємо стани при переході на десктоп і назад
   function sync() {
     if (mql.matches) {
       html.classList.remove("is-menu-open");
@@ -55,10 +54,8 @@
     }
   }
 
-  // При зміні брейкпоінта прибираємо анімації, щоб не мигтіло overlay
   const onChange = () => {
     overlay.classList.add("is-resizing");
-    // форсуємо reflow, щоб застосувався клас і transition: none
     void overlay.offsetHeight;
     sync();
     setTimeout(() => overlay.classList.remove("is-resizing"), 120);

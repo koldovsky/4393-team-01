@@ -84,7 +84,6 @@
   }
 }
 
-/* ===== Burger / Close (X) ===== */
 .header__burger {
   display: flex;
   align-items: center;
@@ -114,23 +113,20 @@
   transform: translate(-50%, -50%);
 }
 
-/* рівномірні відступи від центру */
 .header__burger-bar:nth-child(1) {
   transform: translate(-50%, -10px);
 }
 .header__burger-bar:nth-child(2) {
   transform: translate(-50%, -50%);
-} /* центр */
+}
 .header__burger-bar:nth-child(3) {
   transform: translate(-50%, 8px);
 }
 
-/* hover */
 .header__burger:hover .header__burger-bar {
   background: var(--color-accent-3);
 }
 
-/* Стан «хрестик» */
 .header__burger[aria-expanded="true"] .header__burger-bar:nth-child(1) {
   transform: translate(-50%, -50%) rotate(45deg);
 }
