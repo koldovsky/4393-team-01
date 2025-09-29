@@ -10,4 +10,5 @@
 
 /* How-to-get-there partials */
 @import url("../partials/how-to-get-there.guide.css");
-@import url("../partials/how-to-get-there.map-contact.css");
+@import url("../partials/how-to-get-there.map.css");
+@import url("../partials/how-to-get-there.contact.css");

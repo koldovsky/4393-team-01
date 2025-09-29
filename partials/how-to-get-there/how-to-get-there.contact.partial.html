@@ -1,21 +1,69 @@
-<section class="contact">
-    <h2 id="contact-title">Contact Us</h2>
-    <div class="contact__inner">
-        <div class="contact__content">
-            <p>If you have any questions, feel free to get in touch with us at any time.</p>
-            <ul>
-                <li><strong>Write us:</strong> <a href="mailto:yosemite@email.com">yosemite@email.com</a></li>
-                <li><strong>Call us:</strong> +1 (123) 45 67 89, +1 (123) 45 67 00</li> 
-                <li><strong>Visit us:</strong> Yosemite Mariposa County, Ca, USA</li> 
-            </ul>
-        </div>
+<section class="contact contact--overlay">
+  <div class="contact__inner">
+    <div class="contact__layout">
+      <div class="contact__content">
+        <h2 class="contact__title" id="contact-title">Contact Us</h2>
+        <p class="contact__lead" id="question-paragraph">
+          If you have any questions, feel free to get in touch with us at any
+          time.
+        </p>
 
-        <div class="contact__form">
-            <form id="contact-from">
-                <input placeholder="Name*" name="name" type="text" required>
-                <input placeholder="Phone number*" name="phone-number" type="tel" required>
-                <button>SEND</button>
-            </form>
+        <div class="contact__list">
+          <div class="contact__list-grid">
+            <div class="contact__item">
+              <h3 class="contact__label">Write Us</h3>
+              <p class="contact__value">
+                <a class="contact__link" href="mailto:yosemite@email.com"
+                  >yosemite@email.com</a
+                >
+              </p>
+            </div>
+            <div class="contact__item">
+              <h3 class="contact__label">Call Us</h3>
+              <div class="contact__value">
+                <span class="contact__number">+1 (123) 45 67 89</span>
+                <span class="contact__number">+1 (123) 45 67 00</span>
+              </div>
+            </div>
+            <div class="contact__item contact__item--address">
+              <h3 class="contact__label">Visit Us</h3>
+              <span class="contact__value"
+                >Yosemite Mariposa County,<br />Ca, USA</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="contact__form">
+        <div class="contact__panel">
+          <div class="contact__form-wrap">
+            <form class="contact__form-inner" id="contact-from">
+              <div class="contact__field">
+                <input
+                  class="contact__input"
+                  placeholder="Name*"
+                  name="name"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="contact__field contact__field--flush">
+                <input
+                  class="contact__input"
+                  placeholder="Phone number*"
+                  name="phone-number"
+                  type="tel"
+                  required
+                />
+              </div>
+              <button class="contact__button">
+                <span class="contact__button-text"> SEND </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
