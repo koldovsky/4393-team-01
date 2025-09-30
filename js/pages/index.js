@@ -3,6 +3,7 @@ function init() {
   import("../partials/index.adventure-hero.js");
   import("../partials/index.things-to-do.js");
   import("../partials/index.footer-social-icons.js");
+  import("../partials/index.footer-copyright-year.js");
 }
 
 const totalPartials = document.querySelectorAll(
