@@ -1,9 +1,9 @@
 const socialLinks = document.querySelectorAll(".footer__social-link");
 
-socialLinks.forEach(link => {
+socialLinks.forEach((link) => {
   const icon = link.querySelector(".footer__social-icon");
 
-  link.addEventListener("mousemove", e => {
+  link.addEventListener("mousemove", (e) => {
     window.requestAnimationFrame(() => {
       const rect = link.getBoundingClientRect();
       const x = e.clientX - rect.left;
