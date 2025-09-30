@@ -2,7 +2,7 @@ function init() {
   import("../partials/index.header-menu.js");
   import("../partials/index.adventure-hero.js");
   import("../partials/index.things-to-do.js");
-  import("../partials/index.footer.js");
+  import("../partials/index.footer-social-icons.js");
 }
 
 const totalPartials = document.querySelectorAll(

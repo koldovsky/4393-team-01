@@ -1,6 +1,7 @@
 function init() {
   import("../partials/index.header-menu.js");
   import("../partials/gallery.partial.js");
+  import("../partials/index.footer-social-icons.js");
 }
 
 const totalPartials = document.querySelectorAll(
