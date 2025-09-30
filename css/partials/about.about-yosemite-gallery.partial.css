@@ -1,13 +1,12 @@
 .intro {
-  background-image: url('../../img/about.about-yosemite/background-color-about-yosemite.jpeg');
+  background-image: url("../../img/about.about-yosemite/background-color-about-yosemite.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 140px 0 140px 0; 
+  padding: 140px 0 140px 0;
   color: #ffff;
   position: relative;
 }
-
 
 .intro__container {
   max-width: 1200px;
@@ -37,7 +36,6 @@
   gap: 44px;
 }
 
-
 .cottages__item {
   display: flex;
   flex-direction: column;
@@ -62,7 +60,6 @@
   text-align: center;
   padding: 0 16px;
 }
-
 
 .cottages__title {
   font-size: 1.35rem;
