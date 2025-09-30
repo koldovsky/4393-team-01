@@ -1,0 +1,103 @@
+.intro {
+  background-image: url("../../img/about.about-yosemite/background-color-about-yosemite.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 140px 0 140px 0;
+  color: #ffff;
+  position: relative;
+}
+
+.intro__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 22px 32px 22px;
+  position: relative;
+  z-index: 3;
+}
+
+.intro__text {
+  max-width: 980px;
+  margin: 0 auto 56px auto;
+  text-align: center;
+  font-size: 1.18rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #ffff;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.cottages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 44px;
+}
+
+.cottages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border-radius: 18px;
+  box-shadow: none;
+  padding-bottom: 18px;
+}
+
+.cottages__image {
+  width: 350px;
+  max-width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  background: #eee;
+}
+
+.cottages__content {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.cottages__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffff;
+}
+
+.cottages__description {
+  font-size: 1rem;
+  color: #ffff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 400px) {
+  .cottages__image {
+    height: 120px;
+    border-radius: 12px;
+  }
+  .cottages__title {
+    font-size: 1.09rem;
+  }
+  .cottages__description {
+    font-size: 0.93rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cottages {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cottages {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
