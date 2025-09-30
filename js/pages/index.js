@@ -1,6 +1,7 @@
 function init() {
   import("../partials/index.header-menu.js");
   import("../partials/index.adventure-hero.js");
+  import("../partials/index.things-to-do.js");
 }
 
 const totalPartials = document.querySelectorAll(
