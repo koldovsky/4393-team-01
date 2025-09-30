@@ -183,9 +183,9 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 70%;             /* форма уже, не во всю ширину */
-  max-width: 500px;       /* ограничение на больших экранах */
-  margin-left: auto;      /* смещаем вправо */
+  width: 70%;             
+  max-width: 500px;       
+  margin-left: auto;      
 }
 
 .any-questions__form input,
