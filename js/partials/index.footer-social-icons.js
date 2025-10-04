@@ -3,20 +3,27 @@ const socialLinks = document.querySelectorAll(".footer__social-link");
 socialLinks.forEach((link) => {
   const icon = link.querySelector(".footer__social-icon");
 
+  icon.style.transition = "transform 0.3s ease";
+
+  let animationFrame;
+
+  const updateTransform = (x, y, rect) => {
+    const moveX = (x - rect.width / 2) / 5;
+    const moveY = (y - rect.height / 2) / 5;
+    icon.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) scale(1.1)`;
+  };
+
   link.addEventListener("mousemove", (e) => {
-    window.requestAnimationFrame(() => {
+    cancelAnimationFrame(animationFrame);
+
+    animationFrame = requestAnimationFrame(() => {
       const rect = link.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const moveX = (x - rect.width / 2) / 5;
-      const moveY = (y - rect.height / 2) / 5;
-
-      icon.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
+      updateTransform(e.clientX - rect.left, e.clientY - rect.top, rect);
     });
   });
 
   link.addEventListener("mouseleave", () => {
-    icon.style.transform = "translate(0,0) scale(1)";
+    cancelAnimationFrame(animationFrame);
+    icon.style.transform = "translate3d(0,0,0) scale(1)";
   });
 });
