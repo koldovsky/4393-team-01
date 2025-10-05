@@ -42,3 +42,117 @@ Author: Герей Владислав
       </figure>
     </div>
 </section>
+<style >
+  /* ==========================
+     Styles for index.our-facilities.partial.html
+     Mobile-first, BEM, variables in :root
+     ========================== */
+  :root{
+    --color-bg: #ffffff;
+    --color-text: #0f1724; /* темний відтінок для тексту */
+    --color-primary: #ff6b3d; /* помаранчевий кнопок */
+    --color-accent: #064e3b; /* зелений "brush" */
+    --color-muted: #6b7280;
+    --radius-md: 12px;
+    --container-max: 1100px;
+    --gap-xs: 8px;
+    --gap-sm: 16px;
+    --gap-md: 32px;
+    --ff-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  /* Reset / base */
+  *,*::before,*::after{box-sizing:border-box}
+  :where(html,body){height:100%}
+  html,body{margin:0;padding:0;font-family:var(--ff-sans);background:var(--color-bg);color:var(--color-text);}
+
+  /* Utility container (optional) */
+  .container{max-width:var(--container-max);margin-inline:auto;padding-inline:20px}
+
+  /* Our Facilities block */
+  .our-facilities{position:relative;overflow:visible}
+
+  /* ---------- HERO ---------- */
+ .our-facilities__hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 20px;
+  min-height: 54vh;
+
+  /* НОВИЙ ФОН */
+  background-image: 
+    linear-gradient(180deg, rgba(0,0, 0, 0.05), rgba(0, 0, 0, 0.06)),
+    url('img/index.our-facilities.partial/hero-bg.png');
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--color-bg);
+}
+
+
+  .our-facilities__hero-inner{z-index:2;max-width:900px}
+  .our-facilities__meta{font-size:.75rem;color:rgba(255,255,255,0.85);margin-bottom:10px}
+  .our-facilities__hero-title{font-size:1.6rem;line-height:1.05;margin:0 0 18px;font-weight:700}
+
+  .our-facilities__hero-buttons{display:inline-flex;gap:var(--gap-sm);flex-wrap:wrap;justify-content:center}
+
+  /* Button base */
+  .btn{display:inline-block;padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95rem;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+  .btn:focus{outline:3px solid rgba(255,107,61,0.16);outline-offset:3px}
+  .btn:hover{transform:translateY(-3px)}
+
+  .btn--primary{background:var(--color-primary);color:#fff;border:0;box-shadow:0 6px 18px rgba(255,107,61,0.12)}
+  .btn--outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.85)}
+
+  /* SVG brush divider styles */
+  .our-facilities__brush{display:block;width:100%;height:56px;position:relative;z-index:3}
+  .our-facilities__brush--white{margin-top:-6px} /* трохи перекриває біле тло нижче */
+  .our-facilities__brush--accent{margin-top:28px}
+
+  /* ---------- CONTENT / Facilities ---------- */
+  .our-facilities__content {
+  background: url('img/about.about-yosemite/background-yosemite.jpeg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 48px 20px 64px;
+  position: relative;
+}
+
+  .our-facilities__title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  }
+
+  .our-facilities__media{max-width:1100px;margin-inline:auto}
+  .our-facilities__figure{margin:0;border-radius:var(--radius-md);overflow:hidden}
+  .our-facilities__image{display:block;width:100%;height:320px;object-fit:cover}
+  .our-facilities__caption{font-size:1,25 rem;color:var(--color-muted);padding:12px 0}
+
+  /* ------------------ Responsive ------------------ */
+  @media(min-width:480px){
+    .our-facilities__hero{padding:80px 20px;min-height:60vh}
+    .our-facilities__hero-title{font-size:2rem}
+    .our-facilities__image{height:380px}
+  }
+
+  @media(min-width:768px){
+    .our-facilities__hero{padding:100px 20px;min-height:72vh}
+    .our-facilities__hero-title{font-size:2.6rem}
+    .our-facilities__meta{font-size:.9rem}
+    .our-facilities__image{height:480px}
+  }
+
+  @media(min-width:1024px){
+    .our-facilities__hero{padding:120px 20px}
+    .our-facilities__hero-inner{padding-inline:20px}
+    .our-facilities__hero-title{font-size:3rem}
+  }
+
+
+</style>
