@@ -1,39 +1,38 @@
-<!-- index.our-facilities.partial.html
-     Partial: Our facilities section
-     Автор: [Герей Владислав]
+<!--
+Partial: index.our-facilities.partial.html
+Author: Герей Владислав
 -->
 
-<section id="our-facilities" class="our-facilities">
-  <div class="our-facilities__intro">
-    <h2 class="our-facilities__headline">Get full answer for your questionss</h2>
-    <div class="our-facilities__actions">
-      <a
-        class="our-facilities__button our-facilities__button--primary"
-        href="tel:+380441234567"
-      >
-        Call Us
-      </a>
-      <a
-        class="our-facilities__button our-facilities__button--secondary"
-        href="#"
-      >
-        Reservation
-      </a>
+<section class="our-facilities" aria-label="Our facilities block">
+  <!-- HERO -->
+  <div class="our-facilities__hero" role="region" aria-label="Hero: get full answer">
+    <div class="our-facilities__hero-inner container">
+      <p class="our-facilities__meta">5. index.our-facilities.partial.html</p>
+      <h1 class="our-facilities__hero-title">Get full answer for your question</h1>
+
+      <div class="our-facilities__hero-buttons">
+        <a class="btn btn--primary" href="tel:+12345678900">CALL US</a>
+       <!--<a class="btn btn--outline" href="reservation.html" rel="noopener noreferrer">RESERVATION</a> -->
+      <a class="btn btn--outline" href="reservation.html">RESERVATION</a>
+       
+      </div>
     </div>
-  </div>
 
+  <!-- FACILITIES CONTENT -->
   <div class="our-facilities__content">
-    <h3 class="our-facilities__title">Our Facilities</h3>
-    <figure class="our-facilities__figure">
-      <img
-        class="our-facilities__image"
-        src="https://placehold.co/1200x600"
-        alt="Forest and lake landscape"
-      />
-      <figcaption class="our-facilities__caption">
-        Forest view near the lake
-      </figcaption>
-    </figure>
-  </div>
-</section>
+    <h2 class="our-facilities__title">Our Facilities</h2>
 
+    <div class="our-facilities__media container">
+      <figure class="our-facilities__figure">
+        <img 
+          src="img/index.our-facilities.partial/1018-1600x900.jpg" 
+          alt="View of a forest lake, part of our recreation facilities" 
+          class="our-facilities__image" 
+          width="1600" height="900" 
+          loading="lazy"
+          
+        />
+        <figcaption class="our-facilities__caption">Peaceful lake among evergreen forest</figcaption>
+      </figure>
+    </div>
+</section>
