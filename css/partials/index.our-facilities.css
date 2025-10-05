@@ -39,6 +39,7 @@
   min-height: 54vh;
 
   /* НОВИЙ ФОН */
+   background-color: green;
   background-image: 
     url('img/index.our-facilities.partial/index.our-facilities.partial-hero-bg.png');
   background-size: cover;
@@ -107,4 +108,5 @@
     .our-facilities__hero-inner{padding-inline:20px}
     .our-facilities__hero-title{font-size:3rem}
   }
+
 
