@@ -80,6 +80,7 @@
   .our-facilities__title{
   font-size: 2.5rem;
   font-weight: 800;
+  color: black;
   }
 
   .our-facilities__media{max-width:1100px;margin-inline:auto}
@@ -106,3 +107,4 @@
     .our-facilities__hero-inner{padding-inline:20px}
     .our-facilities__hero-title{font-size:3rem}
   }
+
