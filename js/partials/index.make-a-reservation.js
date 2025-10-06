@@ -1,6 +1,6 @@
 const modal = document.querySelector('.modal');
 const openBtn = document.querySelector('.reservation__submit');
-const closeBtns = document.querySelectorAll('.modal__close, .modal__ok');
+const closeBtns = document.querySelectorAll('.modal__ok');
 
 openBtn.addEventListener('click', () => {
   modal.classList.add('modal--active');
