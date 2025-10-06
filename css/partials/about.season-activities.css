@@ -118,12 +118,20 @@
 }
 
 .carousel__slide {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
 .carousel__slide.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  position: relative; 
+  z-index: 1;
 }
 
 .carousel__button {
