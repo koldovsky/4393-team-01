@@ -10,7 +10,7 @@
   padding: 0;
 }
 
-html:focus-within {
+html: {
   scroll-behavior: smooth;
 }
 
