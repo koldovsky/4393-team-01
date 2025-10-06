@@ -39,6 +39,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/pages/about.css" />
+    <link rel="stylesheet" href="css/partials/about.about-yosemite-gallery.partial.css" />
+</head>
   </head>
   <body>
     <header class="header">
@@ -59,6 +61,12 @@
         class="gallery"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
+        data-hx-get="partials/about/about.about-yosemite-gallery.partial.html"
+      ></section>
+      <section
+        class="gallery"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
         data-hx-get="partials/about/about.season-activities.partial.html"
       ></section>
     </main>
@@ -68,5 +76,6 @@
       data-hx-swap="outerHTML"
       data-hx-get="partials/global/global.footer.partial.html"
     ></footer>
+    <script src="js/pages/about.js"></script>
   </body>
 </html>

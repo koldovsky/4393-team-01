@@ -10,6 +10,16 @@
   padding: 0 24px;
 }
 
+.things-to-do__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  position: relative;
+  flex-direction: column; /* базово (mobile): все йде в колонку */
+  gap: 16px;
+}
 .things-to-do__title {
   font-size: 34px;
   text-align: center;
@@ -90,4 +100,58 @@
   color: var(--color-lightgr);
   max-width: 520px;
   margin: 0 auto;
+}
+
+
+/* кнопка (дизайн повернуто) */
+.things-to-do__currency {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-darkgr);
+
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-accent-3);
+  border-radius: 8px;
+  padding: 8px 32px 8px 12px;
+  cursor: pointer;
+  outline: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ff6600' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px 16px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.things-to-do__currency:hover,
+.things-to-do__currency:focus {
+  background-color: var(--color-accent-3);
+  color: #fff;
+  border-color: var(--color-accent-3);
+}
+
+/* desktop – селектор праворуч */
+@media (min-width: 640px) {
+  .things-to-do__header {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .things-to-do__title {
+    flex: 1;
+    text-align: center;
+  }
+
+  .things-to-do__currency {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

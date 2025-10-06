@@ -98,7 +98,7 @@
 
 .cabin-rental-card__button:hover {
   background: var(--color-bg);
-  color: var(--color-borderhover);;
+  color: #004422;
   text-decoration: none;
 }
 
@@ -122,6 +122,6 @@
 
 .cabin-rentals__see-all:hover {
   background: var(--color-bg);
-  color: var(--color-borderhover);
+  color: (#004422);
   text-decoration: none;
 }
