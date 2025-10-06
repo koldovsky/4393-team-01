@@ -1,6 +1,6 @@
 /* Hordiienko Vladyslava */
 .reservation_img {
-    background-image: url("/img/index.make-a-reservation/index-contactform-bg.jpg");
+    background-image: url("../../img/index.make-a-reservation/index-contactform-bg.jpg");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
