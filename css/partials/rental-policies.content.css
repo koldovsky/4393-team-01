@@ -1,8 +1,21 @@
-.policies {
-  padding-block: 32px;
-  background: url("../../img/rental-policies/bg-rental.jpg") center/cover no-repeat;
+/* =========================================
+   Rental Policies Section
+   ========================================= */
+
+:root {
+  --color-accent: #080707;
+  --color-accent-hover: #f97316;
+  --color-bg-card: rgba(255, 255, 255, 0.8);
+  --color-shadow: rgba(0, 0, 0, 0.1);
 }
 
+.policies {
+  padding-block: 32px;
+  background: url("../../img/rental-policies/bg-rental.jpg") center/cover
+    no-repeat;
+}
+
+/* Header */
 .policies__header {
   text-align: center;
   margin-bottom: 24px;
@@ -15,31 +28,423 @@
   margin: 0;
 }
 
+/* Контейнер для бігучої строки */
+.policies__contacts {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--color-bg-card);
+  border-radius: 8px;
+  padding: 12px 0;
+  position: relative;
+}
+
+/* Обгортка для плавної анімації */
+.policies__marquee-wrapper {
+  display: flex;
+  position: relative;
+  will-change: transform;
+}
+
+/* Контейнер для анімованого контенту */
+.policies__marquee-content {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+/* Стилі для контактів */
+.policies__contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--color-shadow);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.policies__contact:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(184, 44, 44, 0.2);
+}
+
+.policies__person {
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.policies__phone {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(184, 44, 44, 0.1);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.policies__phone:hover {
+  color: var(--color-accent-hover);
+  background: rgba(184, 44, 44, 0.15);
+}
+
+/* =========================================
+   Grid
+   ========================================= */
+
 .policies__grid {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
+  justify-items: center; /* ✅ центрує картки на мобайлі */
+  align-content: start;
+  width: 100%;
+  margin-inline: auto;
 }
 
-@media (min-width: 900px) {
-  .policies__grid { grid-template-columns: repeat(2, 1fr); }
-}
+/* =========================================
+   Policy item
+   ========================================= */
 
 .policy {
   display: grid;
   grid-template-columns: 56px 1fr;
   gap: 14px;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 380px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-bg-card);
+  box-shadow: 0 2px 6px var(--color-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
+/* Hover (десктоп) */
+.policy:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(184, 44, 44, 0.25);
+}
+
+/* =========================================
+   Icon
+   ========================================= */
+
 .policy__icon {
-  width: 56px; height: 56px;
-  border-radius: 999px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* ✅ постійна легка тінь */
 }
+
+/* Іконка всередині */
 .policy__icon img {
-  width: 28px; height: 28px;
-  filter: invert(47%) sepia(90%) saturate(2500%) hue-rotate(10deg) brightness(98%) contrast(97%);
+  width: 28px;
+  height: 28px;
+  filter: invert(47%) sepia(90%) saturate(2500%) hue-rotate(10deg)
+    brightness(98%) contrast(97%);
+  transition: filter 0.3s ease;
+}
+
+/* =========================================
+   Content
+   ========================================= */
+
+.policy__content {
+  align-self: stretch; /* тягне блок на всю висоту */
+  display: grid;
+  align-content: center; /* центр всередині колонки */
+  gap: 8px;
+  margin-top: 4px;
+  transition: margin-top 0.3s ease, gap 0.3s ease;
+}
+
+/* Кнопка (заголовок + плюс) */
+.policy__button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 12px;
+  min-height: 30px; /* = висоті іконки на мобайлі */
+  padding: 0;
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: var(--color-accent);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.policy__button:hover {
+  color: var(--color-accent-hover);
+  transform: translateX(2px);
+}
+
+/* Заголовок у кнопці */
+.policy__title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  word-break: break-word;
+  hyphens: auto;
+  text-wrap: pretty;
+  transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+/* "+" */
+.policy__icon-toggle {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  justify-self: end;
+  transition: transform 0.3s ease;
+}
+
+.policy__button[aria-expanded="true"] .policy__icon-toggle {
+  transform: rotate(45deg);
+}
+
+/* Текст */
+.policy__text-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-top: 0;
+}
+
+.policy__button[aria-expanded="true"] ~ .policy__text-wrapper {
+  max-height: 500px;
+  margin-top: 4px;
+  transition: max-height 0.5s ease-in;
+}
+
+.policy__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* =========================================
+   Адаптивність
+   ========================================= */
+
+@media (max-width: 360px) {
+  .policy__title {
+    font-size: 0.98rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .policies__grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    justify-items: stretch;
+  }
+
+  .policy {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: 64px 1fr;
+    gap: 16px;
+  }
+
+  .policy__button {
+    min-height: 30px;
+  }
+
+  .policy__icon {
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* трохи глибша тінь */
+  }
+
+  .policy__icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .policy__title {
+    font-size: 1.25rem;
+  }
+
+  .policy__content {
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .policies__grid {
+    /* Гнучкі, але НЕ розтягнені колонки */
+    --policy-col-min: 300px;
+    --policy-col-max: 500px;   /* підбери під свою картку */
+    grid-template-columns: repeat(auto-fit, minmax(var(--policy-col-min), var(--policy-col-max)));
+    justify-content: center;   /* центруємо останній неповний ряд */
+    gap: 20px;                 /* (щоб calc нижче було простіше, якщо згодом знадобиться) */
+  }
+
+/* =========================================
+   Менше руху — без анімацій
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+  .policy,
+  .policy__content,
+  .policy__icon,
+  .policy__icon img,
+  .policy__title,
+  .policy__button,
+  .policy__icon-toggle {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* (опційно) сучасне балансування рядків */
+@supports (text-wrap: balance) {
+  .policy__title {
+    text-wrap: balance;
+  }
+}
+}
+
+/* =========================================
+   Contact Form
+   ========================================= */
+.contact-form {
+  max-width: 600px;
+  margin: 48px auto 0;
+  padding: 32px;
+  background: var(--color-bg-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.contact-form__title {
+  font-size: 1.75rem;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contact-form__description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.contact-form__form {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form__group {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-form__label {
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-form__input,
+.contact-form__select,
+.contact-form__textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Стилі для плейсхолдерів */
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Для Microsoft Edge */
+.contact-form__input::-ms-input-placeholder,
+.contact-form__textarea::-ms-input-placeholder {
+  color: #9ca3af;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Для Firefox */
+.contact-form__input::-moz-placeholder,
+.contact-form__textarea::-moz-placeholder {
+  color: #9ca3af;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.contact-form__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form__input:focus,
+.contact-form__select:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(8, 7, 7, 0.1);
+}
+
+.contact-form__submit {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  justify-self: center;
+}
+
+.contact-form__submit:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
+/* Form validation styles */
+.contact-form__input:invalid:not(:placeholder-shown),
+.contact-form__textarea:invalid:not(:placeholder-shown) {
+  border-color: #dc2626;
+}
+
+.contact-form__success {
+  text-align: center;
+  color: #059669;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.contact-form__error {
+  text-align: center;
+  color: #dc2626;
+  font-weight: 500;
+  margin-top: 16px;
 }
