@@ -5,6 +5,7 @@ function init() {
   import("../partials/index.make-a-reservation.js")
   import("../partials/index.footer-social-icons.js");
   import("../partials/index.footer-copyright-year.js");
+  import("../partials/index.shop-cafe.js");
 }
 
 const totalPartials = document.querySelectorAll(

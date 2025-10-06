@@ -73,3 +73,17 @@
   padding: 0 15px;
   margin-bottom: 15px;
 }
+
+/* Подъём карточки + тень для shop-cafe */
+.shopcafe__item-wrapper {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  will-change: transform, box-shadow;
+}
+
+.shopcafe__item-wrapper:hover,
+.shopcafe__item-wrapper:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
