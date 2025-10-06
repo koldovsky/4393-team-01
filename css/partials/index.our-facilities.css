@@ -16,10 +16,6 @@
     --gap-md: 32px;
     --ff-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   }
-html {
-  scroll-behaviour: smooth;
-}
-
   /* Reset / base */
   *,*::before,*::after{box-sizing:border-box}
   :where(html,body){height:100%}
@@ -113,6 +109,7 @@ html {
     .our-facilities__hero-inner{padding-inline:20px}
     .our-facilities__hero-title{font-size:3rem}
   }
+
 
 
 
