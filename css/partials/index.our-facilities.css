@@ -77,6 +77,7 @@
   padding: 48px 20px 64px;
   position: relative;
   max-width: 1100px;
+  margin: 0 auto; /* ✅ центрує увесь блок */
 }
 
   .our-facilities__title{
@@ -109,6 +110,7 @@
     .our-facilities__hero-inner{padding-inline:20px}
     .our-facilities__hero-title{font-size:3rem}
   }
+
 
 
 
