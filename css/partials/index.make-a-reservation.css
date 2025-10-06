@@ -67,3 +67,31 @@
     }
 
 }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal--active {
+  display: flex;
+}
+
+.modal__content {
+  background-color: var(--color-bg);
+  border-radius: 30px;
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.modal__close{
+    justify-self: right;
+}
