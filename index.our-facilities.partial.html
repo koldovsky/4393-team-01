@@ -1,152 +1,158 @@
-<!-- index.our-facilities.partial.html
-     Partial: Our facilities section
-     Автор: [Герей Владислав]
+<!--
+Partial: index.our-facilities.partial.html
+Author: Герей Владислав
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Facilities</title>
-    <style>
-      /* Скидання стилів */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+<section class="our-facilities" aria-label="Our facilities block">
+  <!-- HERO -->
+  <div class="our-facilities__hero" role="region" aria-label="Hero: get full answer">
+    <div class="our-facilities__hero-inner container">
+      <p class="our-facilities__meta">5. index.our-facilities.partial.html</p>
+      <h1 class="our-facilities__hero-title">Get full answer for your questionss</h1>
 
-      body {
-        font-family: "Arial", sans-serif;
-        background: #fff;
-        color: #222;
-        line-height: 1.6;
-      }
-
-      section {
-        position: relative;
-        overflow: hidden;
-      }
-
-      /* Hero секція */
-      .hero {
-        background: url("1018-1600x900.jpg");
-        color: #fff;
-        text-align: center;
-        padding: 140px 20px 120px;
-        position: relative;
-      }
-      .hero h1 {
-        font-size: 2.4rem;
-        font-weight: bold;
-      }
-
-      .hero__buttons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 30px;
-      }
-
-      .btn {
-        padding: 12px 28px;
-        border-radius: 25px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.3s ease;
-        font-size: 1rem;
-      }
-
-      .btn--primary {
-        background: #ff6b3d;
-        color: #fff;
-        border: none;
-      }
-
-      .btn--secondary {
-        background: transparent;
-        border: 2px solid #fff;
-        color: #fff;
-      }
-
-      .btn:hover {
-        transform: scale(1.05);
-      }
-
-      /* Ефект пензля */
-      .brush-divider {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        height: 90px;
-        background: #fff;
-        clip-path: polygon(
-          0% 70%,
-          10% 75%,
-          20% 60%,
-          30% 80%,
-          40% 65%,
-          50% 85%,
-          60% 68%,
-          70% 80%,
-          80% 62%,
-          90% 78%,
-          100% 65%,
-          100% 100%,
-          0% 100%
-        );
-      }
-
-      /* Facilities секція */
-      .facilities {
-        background: #fff;
-        text-align: center;
-        padding: 80px 20px;
-        position: relative;
-      }
-
-      .facilities h2 {
-        font-size: 2rem;
-        margin-bottom: 40px;
-        font-weight: bold;
-      }
-
-      .facilities__image {
-        width: 100%;
-        max-height: 480px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-
-      .facilities .brush-divider {
-        background: #064e3b; /* зелений */
-        top: auto;
-        bottom: -1px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Get full answer for your question</h1>
-      <div class="hero__buttons">
-        <button class="btn btn--primary">CALL US</button>
-        <button class="btn btn--secondary">RESERVATION</button>
+      <div class="our-facilities__hero-buttons">
+        <a class="btn btn--primary" href="tel:+12345678900">CALL US</a>
+       <!--<a class="btn btn--outline" href="reservation.html" rel="noopener noreferrer">RESERVATION</a> -->
+      <a class="btn btn--outline" href="reservation.html">RESERVATION</a>
+       
       </div>
-      <div class="brush-divider"></div>
-    </section>
+    </div>
 
-    <!-- Facilities Section -->
-    <section class="facilities">
-      <h2>Our Facilities</h2>
-      <img
-        src="s33760p-900x601.jpg"
-        alt="Forest and lake"
-        class="facilities__image"
-      />
-      <div class="brush-divider"></div>
-    </section>
-  </body>
-</html>
+  </div>
+
+  <!-- SVG хвиля -->
+
+  </div>
+
+  <!-- FACILITIES CONTENT -->
+  <div class="our-facilities__content">
+    <h2 class="our-facilities__title">Our Facilities</h2>
+
+    <div class="our-facilities__media container">
+      <figure class="our-facilities__figure">
+        <img 
+          src="img/index.our-facilities.partial/1018-1600x900.jpg" 
+          alt="View of a forest lake, part of our recreation facilities" 
+          class="our-facilities__image" 
+          width="1600" height="900" 
+          loading="lazy"
+          
+        />
+        <figcaption class="our-facilities__caption">Peaceful lake among evergreen forest</figcaption>
+      </figure>
+    </div>
+</section>
+<style >
+  /* ==========================
+     Styles for index.our-facilities.partial.html
+     Mobile-first, BEM, variables in :root
+     ========================== */
+  :root{
+    --color-bg: #ffffff;
+    --color-text: #0f1724; /* темний відтінок для тексту */
+    --color-primary: #ff6b3d; /* помаранчевий кнопок */
+    --color-accent: #064e3b; /* зелений "brush" */
+    --color-muted: #6b7280;
+    --radius-md: 12px;
+    --container-max: 1100px;
+    --gap-xs: 8px;
+    --gap-sm: 16px;
+    --gap-md: 32px;
+    --ff-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  /* Reset / base */
+  *,*::before,*::after{box-sizing:border-box}
+  :where(html,body){height:100%}
+  html,body{margin:0;padding:0;font-family:var(--ff-sans);background:var(--color-bg);color:var(--color-text);}
+
+  /* Utility container (optional) */
+  .container{max-width:var(--container-max);margin-inline:auto;padding-inline:20px}
+
+  /* Our Facilities block */
+  .our-facilities{position:relative;overflow:visible}
+
+  /* ---------- HERO ---------- */
+ .our-facilities__hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 20px;
+  min-height: 54vh;
+
+  /* НОВИЙ ФОН */
+  background-image: 
+    linear-gradient(180deg, rgba(0,0, 0, 0.05), rgba(0, 0, 0, 0.06)),
+    url('img/index.our-facilities.partial/hero-bg.png');
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--color-bg);
+}
+
+
+  .our-facilities__hero-inner{z-index:2;max-width:900px}
+  .our-facilities__meta{font-size:.75rem;color:rgba(255,255,255,0.85);margin-bottom:10px}
+  .our-facilities__hero-title{font-size:1.6rem;line-height:1.05;margin:0 0 18px;font-weight:700}
+
+  .our-facilities__hero-buttons{display:inline-flex;gap:var(--gap-sm);flex-wrap:wrap;justify-content:center}
+
+  /* Button base */
+  .btn{display:inline-block;padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95rem;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+  .btn:focus{outline:3px solid rgba(255,107,61,0.16);outline-offset:3px}
+  .btn:hover{transform:translateY(-3px)}
+
+  .btn--primary{background:var(--color-primary);color:#fff;border:0;box-shadow:0 6px 18px rgba(255,107,61,0.12)}
+  .btn--outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.85)}
+
+  /* SVG brush divider styles */
+  .our-facilities__brush{display:block;width:100%;height:56px;position:relative;z-index:3}
+  .our-facilities__brush--white{margin-top:-6px} /* трохи перекриває біле тло нижче */
+  .our-facilities__brush--accent{margin-top:28px}
+
+  /* ---------- CONTENT / Facilities ---------- */
+  .our-facilities__content {
+  background: url('img/about.about-yosemite/background-yosemite.jpeg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 48px 20px 64px;
+  position: relative;
+}
+
+  .our-facilities__title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  }
+
+  .our-facilities__media{max-width:1100px;margin-inline:auto}
+  .our-facilities__figure{margin:0;border-radius:var(--radius-md);overflow:hidden}
+  .our-facilities__image{display:block;width:100%;height:320px;object-fit:cover}
+  .our-facilities__caption{font-size:1,25 rem;color:var(--color-muted);padding:12px 0}
+
+  /* ------------------ Responsive ------------------ */
+  @media(min-width:480px){
+    .our-facilities__hero{padding:80px 20px;min-height:60vh}
+    .our-facilities__hero-title{font-size:2rem}
+    .our-facilities__image{height:380px}
+  }
+
+  @media(min-width:768px){
+    .our-facilities__hero{padding:100px 20px;min-height:72vh}
+    .our-facilities__hero-title{font-size:2.6rem}
+    .our-facilities__meta{font-size:.9rem}
+    .our-facilities__image{height:480px}
+  }
+
+  @media(min-width:1024px){
+    .our-facilities__hero{padding:120px 20px}
+    .our-facilities__hero-inner{padding-inline:20px}
+    .our-facilities__hero-title{font-size:3rem}
+  }
+
+
+</style>

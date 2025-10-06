@@ -185,6 +185,8 @@
   .adventure-hero__name {
     font-size: 16px;
   }
+}
+@media (min-width: 900px) {
   .adventure-hero__tree-img {
     display: block;
   }

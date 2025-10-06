@@ -1,16 +1,28 @@
 #about-yosemite {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
     background: url("../../img/about.about-yosemite/background-yosemite.jpeg") no-repeat center center;
     background-size: cover;
     text-align: center;
     color: var(--color-lightgr-bg);
 }
-
+#about-yosemite.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 .about-wrapper {
-    padding: 5rem 1.5rem;
+    padding: 1rem 1.5rem;
     max-width: 1050px;
     margin: 0 auto;
 }
-
+.image-carousel {
+    position: relative;
+    width: 100%;
+}
+.image-carousel:hover .hero-image {
+    transform: scale(1.05);
+}
 .hero-image {
     aspect-ratio: 2.05 / 1;
     object-fit: cover;
@@ -18,32 +30,73 @@
     height: auto;
     border-radius: 0.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, opacity 0.5s ease;
+    display: block;
+}
+.carousel-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    pointer-events: all;
 }
 
+.carousel-btn span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.carousel-btn:hover span {
+    opacity: 0.8;
+}
+.carousel-btn-left {
+    left: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.carousel-btn-left span {
+    left: 1.5rem;
+}
+.carousel-btn-right {
+    right: 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.carousel-btn-right span {
+    right: 1.5rem;
+}
 .section-content {
     margin-top: 45px;
 }
-
 .header-yosemite {
     color: var(--color-title);
     font-weight: 700;
 }
-
 .intro-text {
     margin-top: 25px;
     line-height: 1.9rem;
     color: var(--color-title);
     font-size: 19px;
 }
-
 .details-text {
     margin-top: 25px;
     line-height: 1.6rem;
     color: var(--color-title);
     font-size: 1rem;
 }
-
-@media (min-width: 613px){
+@media (min-width: 900px){
+    .about-wrapper{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .header-yosemite{
         font-size: 2.75rem;
     }

@@ -122,6 +122,6 @@
 
 .cabin-rentals__see-all:hover {
   background: var(--color-bg);
-  color: #004422;
+  color: (#004422);
   text-decoration: none;
 }

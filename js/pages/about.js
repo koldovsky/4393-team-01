@@ -1,7 +1,7 @@
 function init() {
   import("../partials/index.header-menu.js");
-  import("../partials/index.adventure-hero.js");
-  import("../partials/index.things-to-do.js");
+  import("../partials/about.about-yosemite.js");
+  import("../partials/about.season-activities.js");
   import("../partials/index.footer-social-icons.js");
   import("../partials/index.footer-copyright-year.js");
 }
