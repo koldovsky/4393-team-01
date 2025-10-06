@@ -16,6 +16,14 @@
     --gap-md: 32px;
     --ff-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Якщо є фіксований header — додаємо відступ зверху, щоб блок не ховався */
+#reservation_form {
+  scroll-margin-top: 88px; /* підлаштуй це число під висоту свого header */
+}
 
   /* Reset / base */
   *,*::before,*::after{box-sizing:border-box}
@@ -110,6 +118,7 @@
     .our-facilities__hero-inner{padding-inline:20px}
     .our-facilities__hero-title{font-size:3rem}
   }
+
 
 
 
