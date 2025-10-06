@@ -69,6 +69,11 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.3s ease;
+}
+
+.guide__icon:hover {
+  box-shadow: 0 0 6px rgba(249, 115, 22, 0.75); 
 }
 
 .guide__icon img {
@@ -100,6 +105,64 @@
   grid-gap: 15px;
 }
 
+.guide__modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding: 0; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  align-items: center;    
+  justify-content: center; 
+}
+
+.guide__modal-content {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0; 
+}
+
+.guide__modal-close,
+.guide__modal-prev,
+.guide__modal-next {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  transform: translateY(-50%);
+}
+
+.guide__modal-close {
+  top: 20px;
+  right: 40px;
+  font-size: 50px;
+  transform: none;
+}
+
+.guide__modal-prev {
+  left: 20px;
+}
+
+.guide__modal-next {
+  right: 20px;
+}
+
+.guide__modal-close:hover,
+.guide__modal-prev:hover,
+.guide__modal-next:hover {
+  color: #ccc;
+}
+
 @media (min-width: 769px) {
   .guide__title {
     font-size: 39px;
@@ -125,6 +188,16 @@
   .guide__icon {
     flex: 0 0 70px;
     height: 70px;
+  }
+
+  .guide__modal {
+    padding-top: 60px; /* top padding */
+  }
+  
+  .guide__modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px; /* rounded corners on desktop */
   }
 }
 
