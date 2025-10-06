@@ -51,7 +51,7 @@
 
   .our-facilities__hero-inner{z-index:1;max-width:900px}
   .our-facilities__meta{font-size:.75rem;color:rgba(255,255,255,0.85);margin-bottom:10px}
-  .our-facilities__hero-title{font-size:1.6rem;line-height:1.05;margin:0 0 18px;font-weight:700}
+  .our-facilities__hero-title{font-size:1.6rem;line-height:1.05;margin:0 0 35px;font-weight:700}
 
   .our-facilities__hero-buttons{display:inline-flex;gap:var(--gap-sm);flex-wrap:wrap;justify-content:center}
 
@@ -109,6 +109,7 @@
     .our-facilities__hero-inner{padding-inline:20px}
     .our-facilities__hero-title{font-size:3rem}
   }
+
 
 
 
