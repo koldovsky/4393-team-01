@@ -2,6 +2,7 @@ function init() {
   import("../partials/index.header-menu.js");
   import("../partials/index.adventure-hero.js");
   import("../partials/index.things-to-do.js");
+  import("../partials/index.make-a-reservation.js")
   import("../partials/index.footer-social-icons.js");
   import("../partials/index.footer-copyright-year.js");
 }
