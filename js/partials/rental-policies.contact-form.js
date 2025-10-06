@@ -1,4 +1,7 @@
+import { initCustomSelect } from './custom-select.js';
+
 export default function initContactForm() {
+    initCustomSelect();
     const form = document.getElementById('contactForm');
     if (!form) return;
 

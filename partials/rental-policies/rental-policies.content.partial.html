@@ -184,14 +184,18 @@
         </div>
 
         <div class="contact-form__group">
-          <label for="subject" class="contact-form__label">Subject</label>
-          <select id="subject" name="subject" class="contact-form__select" required>
-            <option value="">Select a topic</option>
-            <option value="booking">Booking Question</option>
-            <option value="cancellation">Cancellation</option>
-            <option value="facilities">Facilities</option>
-            <option value="other">Other</option>
-          </select>
+          <label class="contact-form__label">Subject</label>
+          <div class="custom-select">
+            <div class="custom-select__selected" tabindex="0">Select a topic</div>
+            <div class="custom-select__options">
+              <div class="custom-select__option" data-value="">Select a topic</div>
+              <div class="custom-select__option" data-value="booking">Booking Question</div>
+              <div class="custom-select__option" data-value="cancellation">Cancellation</div>
+              <div class="custom-select__option" data-value="facilities">Facilities</div>
+              <div class="custom-select__option" data-value="other">Other</div>
+            </div>
+            <input type="hidden" name="subject" id="subject" required>
+          </div>
         </div>
 
         <div class="contact-form__group">
