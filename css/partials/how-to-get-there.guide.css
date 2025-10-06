@@ -73,7 +73,7 @@
 }
 
 .guide__icon:hover {
-  box-shadow: 0 0 6px rgba(249, 115, 22, 0.75); 
+  box-shadow: 0 0 6px rgba(249, 115, 22, 0.75);
 }
 
 .guide__icon img {
@@ -86,8 +86,8 @@
 .guide__images {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 15px;
-  max-width: 900px;
+  grid-gap: 30px;
+  max-width: 1125px;
   margin: auto;
 }
 
@@ -102,22 +102,24 @@
 .guide__images-left {
   display: grid;
   grid-template-rows: auto;
-  grid-gap: 15px;
+  grid-gap: 20px;
 }
+
+/* Modal Section */
 
 .guide__modal {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding: 0; 
+  padding: 0;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-  align-items: center;    
-  justify-content: center; 
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
 }
 
 .guide__modal-content {
@@ -125,7 +127,7 @@
   display: block;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .guide__modal-close,
@@ -169,15 +171,22 @@
   }
 
   .guide__images {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .guide__images img {
+    width: 100%;
+    height: 100%;
   }
 
   .guide__images-left {
     grid-template-rows: 1fr 1fr;
+    max-height: 515px;
   }
 
   .guide__images-left img {
     height: 100%;
+    max-height: 247.5px;
   }
 
   .guide__icon img {
@@ -191,13 +200,13 @@
   }
 
   .guide__modal {
-    padding-top: 60px; /* top padding */
+    padding-top: 60px;
   }
-  
+
   .guide__modal-content {
     max-width: 80%;
     max-height: 80%;
-    border-radius: 10px; /* rounded corners on desktop */
+    border-radius: 10px;
   }
 }
 
