@@ -1,135 +1,208 @@
 <section class="policies">
-    <div class="container">
-        <header class="policies__header">
-            <h1 class="policies__title">Rental policies</h1>
-            <p class="policies__lead">For all questions refer to</p>
-            <ul class="policies__contacts">
-                <li class="policies__contact">
-                    Jessica Moore <a class="policies__phone" href="tel:+12345678900">+1 (234) 567 89 00</a>
-                </li>
-                <li class="policies__contact">
-                    Anthony Parker <a class="policies__phone" href="tel:+12345678901">+1 (234) 567 89 01</a>
-                </li>
-                <li class="policies__contact">
-                    Mountain Time Cabin Rentals
-                    <a class="policies__phone" href="tel:+12345678902">+1 (234) 567 89 02</a>
-                </li>
-            </ul>
-        </header>
+  <div class="container">
+    <header class="policies__header">
+      <h1 class="policies__title">Rental policies</h1>
+      <p class="policies__lead">For all questions refer to</p>
+      <div class="policies__contacts">
+        <div class="policies__contact">
+          <span class="policies__person">Jessica Moore</span>
+          <a class="policies__phone" href="tel:+12345678900">+1 (234) 567 89 00</a>
+        </div>
+        <div class="policies__contact">
+          <span class="policies__person">Anthony Parker</span>
+          <a class="policies__phone" href="tel:+12345678901">+1 (234) 567 89 01</a>
+        </div>
+        <div class="policies__contact">
+          <span class="policies__person">Mountain Time Cabin Rentals</span>
+          <a class="policies__phone" href="tel:+12345678902">+1 (234) 567 89 02</a>
+        </div>
+      </div>
+    </header>
 
-        <ul class="policies__grid">
-            <!-- 1 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/rates.svg" alt="rates" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Rates, Taxes, and Fees</h3>
-                    <p class="policy__text">
-                        Rates depend on the holiday and peak seasons. Guests are responsible for taxes. Prices, taxes,
-                        and fees can be
-                        changed without notice.
-                    </p>
-                </div>
-            </li>
+    <ul class="policies__grid">
+      <!-- 1 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/rates.svg" alt="rates" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Rates, Taxes, and Fees</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              Rates depend on the holiday and peak seasons. Guests are responsible for taxes. Prices, taxes, and fees can be changed without notice.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 2 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/linen.svg" alt="linen" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Linen</h3>
-                    <p class="policy__text">
-                        We supply all cabins with needed linen. Washer/dryer is available on request. Towels/bed linen
-                        won’t be changed during the stay.
-                    </p>
-                </div>
-            </li>
+      <!-- 2 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/linen.svg" alt="linen" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Linen</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              We supply all cabins with needed linen. Washer/dryer is available on request. Towels/bed linen won’t be changed during the stay.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 3 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/smoking.svg" alt="smoking" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Smoking</h3>
-                    <p class="policy__text">
-                        No smoking inside the cabin. Outside smoking is permitted; please don’t litter and be careful
-                        with fire.
-                    </p>
-                </div>
-            </li>
+      <!-- 3 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/smoking.svg" alt="smoking" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Smoking</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              No smoking inside the cabin. Outside smoking is permitted; please don’t litter and be careful with fire.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 4 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/deposit.svg" alt="deposit" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Damage deposit</h3>
-                    <p class="policy__text">
-                        Deposit refunded after inspection for damage/excessive cleaning. Standard amount is $150.
-                    </p>
-                </div>
-            </li>
+      <!-- 4 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/deposit.svg" alt="deposit" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Damage deposit</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              Deposit refunded after inspection for damage/excessive cleaning. Standard amount is $150.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 5 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/keys.svg" alt="keys" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Keys</h3>
-                    <p class="policy__text">
-                        Return keys upon departure. Re-key fee applies if keys are lost or not returned; you are
-                        responsible for this procedure.
-                    </p>
-                </div>
-            </li>
+      <!-- 5 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/keys.svg" alt="keys" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Keys</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              Return keys upon departure. Re-key fee applies if keys are lost or not returned; you are responsible for this procedure.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 6 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/timing.svg" alt="timing" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Timing</h3>
-                    <p class="policy__text">
-                        Damage deposit amount is $150. Check-in 3:00 pm. Check-out 11:00 am.
-                    </p>
-                </div>
-            </li>
+      <!-- 6 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/timing.svg" alt="timing" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Timing</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              Damage deposit amount is $150. Check-in 3:00 pm. Check-out 11:00 am.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 7 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/cancellation.svg" alt="cancellation" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Cancellation Policy</h3>
-                    <p class="policy__text">
-                        Cancel in writing (email) at least 2 weeks before arrival for full refund minus $25 processing.
-                        7–14 days: 50% if re-booked.
-                        ≤6 days: no refund.
-                    </p>
-                </div>
-            </li>
+      <!-- 7 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/cancellation.svg" alt="cancellation" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Cancellation Policy</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              Cancel in writing (email) at least 2 weeks before arrival for full refund minus $25 processing. 7–14 days: 50% if re-booked. ≤6 days: no refund.
+            </p>
+          </div>
+        </div>
+      </li>
 
-            <!-- 8 -->
-            <li class="policy">
-                <div class="policy__icon">
-                    <img src="img/rental-policies/icons/cleaning.svg" alt="cleaning" />
-                </div>
-                <div class="policy__content">
-                    <h3 class="policy__title">Cleaning Requirements</h3>
-                    <p class="policy__text">
-                        Leave the cabin in the same condition as prior to arrival. Make beds, wash dishes, clean kitchen
-                        utensils.
-                        Excessive cleaning will be charged from deposit.
-                    </p>
-                </div>
-            </li>
-        </ul>
+      <!-- 8 -->
+      <li class="policy">
+        <div class="policy__icon">
+          <img src="img/rental-policies/icons/cleaning.svg" alt="cleaning" />
+        </div>
+        <div class="policy__content">
+          <button class="policy__button" aria-expanded="false">
+            <h3 class="policy__title">Cleaning Requirements</h3>
+            <span class="policy__icon-toggle">+</span>
+          </button>
+          <div class="policy__text-wrapper">
+            <p class="policy__text">
+              Leave the cabin in the same condition as prior to arrival. Make beds, wash dishes, clean kitchen utensils. Excessive cleaning will be charged from deposit.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Contact Us Form -->
+    <div class="contact-form">
+      <h2 class="contact-form__title">Contact Us</h2>
+      <p class="contact-form__description">Have questions? Send us a message and we'll get back to you shortly.</p>
+      
+      <form class="contact-form__form" id="contactForm">
+        <div class="contact-form__group">
+          <label for="name" class="contact-form__label">Your Name</label>
+          <input type="text" id="name" name="name" class="contact-form__input" 
+            placeholder="e.g., John Smith" required>
+        </div>
+
+        <div class="contact-form__group">
+          <label for="email" class="contact-form__label">Your Email</label>
+          <input type="email" id="email" name="email" class="contact-form__input" 
+            placeholder="e.g., john.smith@example.com" required>
+        </div>
+
+        <div class="contact-form__group">
+          <label for="subject" class="contact-form__label">Subject</label>
+          <select id="subject" name="subject" class="contact-form__select" required>
+            <option value="">Select a topic</option>
+            <option value="booking">Booking Question</option>
+            <option value="cancellation">Cancellation</option>
+            <option value="facilities">Facilities</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="contact-form__group">
+          <label for="message" class="contact-form__label">Your Message</label>
+          <textarea id="message" name="message" class="contact-form__textarea" 
+            placeholder="Write your message here... For example: I would like to inquire about cabin availability for the upcoming weekend." required></textarea>
+        </div>
+
+        <button type="submit" class="contact-form__submit">Send Message</button>
+      </form>
     </div>
+  </div>
 </section>
+
