@@ -1,8 +1,9 @@
 function init() {
   import("../partials/index.header-menu.js");
+  import("../partials/how-to-get-there.contact.partial.js");
   import("../partials/index.footer-social-icons.js");
   import("../partials/index.footer-copyright-year.js");
-  import('../partials/how-to-get-there.guide.js');
+  import("../partials/how-to-get-there.guide.js");
 }
 
 const totalPartials = document.querySelectorAll(
