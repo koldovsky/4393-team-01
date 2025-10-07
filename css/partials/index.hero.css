@@ -118,5 +118,6 @@
   }
   .hero__button {
     block-size: 64px;
+    margin-block-start: 30px;
   }
 }

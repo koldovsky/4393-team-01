@@ -39,7 +39,7 @@ video {
   --color-text: #000000;
   --color-title: #282520;
   --color-muted: #2a2c30;
-  --color-accent: #f97316;
+  --color-accent: #f97316 !important;
   --color-accent-2: #22c55e;
   --color-accent-3: #f98250;
   --color-lightgr:#848484;
